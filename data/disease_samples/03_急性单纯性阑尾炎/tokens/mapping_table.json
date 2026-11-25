@@ -1,0 +1,486 @@
+{
+  "metadata": {
+    "disease_id": "APPENDICITIS",
+    "disease_name": "急性单纯性阑尾炎行腹腔镜阑尾切除术",
+    "icd10": "K35.1/K35.9",
+    "icd9cm3": "47.09",
+    "specialty": "普通外科",
+    "standard_hospital_stay": "≤7天",
+    "official_version": "2016年版",
+    "source_document": "clinical_pathways/1010个临床路径(2009-2016汇总)/2016年新发布的临床路径(1-524)/522急性单纯性阑尾炎行腹腔镜阑尾切除术临床路径.docx",
+    "global_vocab_size": 329,
+    "disease_active_vocab_size": 64,
+    "collision_free_global_ids": true,
+    "category_counts": {
+      "special": 2,
+      "meta": 6,
+      "cond": 5,
+      "exclude": 1,
+      "stage": 6,
+      "order": 5,
+      "req": 2,
+      "nursing": 5,
+      "diet": 4,
+      "lab": 9,
+      "exam": 4,
+      "proc": 6,
+      "med": 1,
+      "discharge": 3,
+      "variation": 3
+    }
+  },
+  "token_to_id": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "<CP_START>": 4,
+    "<PATHWAY:急性单纯性阑尾炎行腹腔镜阑尾切除术>": 172,
+    "<ICD10:K35.1_K35.9>": 173,
+    "<ICD9CM3:47.09>": 174,
+    "<SPEC:普通外科>": 175,
+    "<STAY:≤7天>": 176,
+    "<VER:2016年版>": 177,
+    "<COND:第一诊断符合ICD10_K35.1或K35.9>": 178,
+    "<COND:有手术适应证无手术禁忌证>": 179,
+    "<COND:转移性右下腹痛病史>": 180,
+    "<COND:腰大肌_结肠充气_闭孔内肌试验及直肠指诊>": 181,
+    "<EXCLUDE:手术风险大或不能耐受全麻者>": 182,
+    "<STAGE:D1_急诊手术日>": 183,
+    "<ORDER:LONG>": 63,
+    "<REQ:REQUIRED>": 22,
+    "<NURSING:I级护理>": 81,
+    "<ORDER:TEMP>": 21,
+    "<DIET:术前禁食水>": 184,
+    "<LAB:血常规>": 124,
+    "<LAB:尿常规>": 125,
+    "<LAB:凝血功能>": 38,
+    "<LAB:肝肾功能>": 185,
+    "<LAB:感染性疾病筛查>": 40,
+    "<EXAM:心电图>": 134,
+    "<EXAM:胸部X光片或胸透>": 186,
+    "<EXAM:腹部立位X光片>": 187,
+    "<REQ:OPTIONAL>": 41,
+    "<LAB:血尿淀粉酶>": 188,
+    "<EXAM:腹部超声>": 138,
+    "<PROC:疑似输尿管结石请泌尿外科会诊_疑似妇科病请妇科会诊>": 189,
+    "<MED:预防性抗菌药物_按卫医发2004_285号执行>": 190,
+    "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>": 191,
+    "<PROC:全身麻醉>": 192,
+    "<PROC:腹腔镜阑尾切除术>": 193,
+    "<LAB:术后标本送病理检查>": 194,
+    "<LAB:术中渗出物送细菌培养及药敏>": 195,
+    "<NURSING:术后平卧6小时_12小时下床活动>": 196,
+    "<STAGE:D2_术后第1天>": 197,
+    "<NURSING:II级护理>": 85,
+    "<DIET:术后全流食>": 198,
+    "<NURSING:下床活动促肠功能恢复>": 199,
+    "<STAGE:D3_术后第2天>": 200,
+    "<DIET:术后半流食>": 201,
+    "<PROC:切口换药与观察排气>": 202,
+    "<STAGE:D4_术后第3天>": 203,
+    "<LAB:复查血常规及相关生化指标>": 204,
+    "<PROC:观察切口有无血肿渗血>": 205,
+    "<STAGE:D5_术后第4天>": 206,
+    "<PROC:观察切口有无感染>": 207,
+    "<STAGE:D6_D7_术后第5_6天出院日>": 208,
+    "<NURSING:III级护理>": 93,
+    "<DIET:普食>": 209,
+    "<ORDER:DISCHARGE>": 154,
+    "<DISCHARGE:患者一般情况良好恢复正常饮食>": 210,
+    "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>": 211,
+    "<DISCHARGE:切口愈合良好可在门诊拆线>": 212,
+    "<VARIATION:阑尾周围脓肿先抗炎或穿刺引流必要时II期切除>": 213,
+    "<VARIATION:继发切口或腹腔或门脉系统感染>": 214,
+    "<VARIATION:出现其他内外科疾病需明确诊断>": 215,
+    "<CP_END>": 5
+  },
+  "id_to_token": {
+    "0": "<pad>",
+    "1": "<unk>",
+    "2": "<s>",
+    "3": "</s>",
+    "4": "<CP_START>",
+    "172": "<PATHWAY:急性单纯性阑尾炎行腹腔镜阑尾切除术>",
+    "173": "<ICD10:K35.1_K35.9>",
+    "174": "<ICD9CM3:47.09>",
+    "175": "<SPEC:普通外科>",
+    "176": "<STAY:≤7天>",
+    "177": "<VER:2016年版>",
+    "178": "<COND:第一诊断符合ICD10_K35.1或K35.9>",
+    "179": "<COND:有手术适应证无手术禁忌证>",
+    "180": "<COND:转移性右下腹痛病史>",
+    "181": "<COND:腰大肌_结肠充气_闭孔内肌试验及直肠指诊>",
+    "182": "<EXCLUDE:手术风险大或不能耐受全麻者>",
+    "183": "<STAGE:D1_急诊手术日>",
+    "63": "<ORDER:LONG>",
+    "22": "<REQ:REQUIRED>",
+    "81": "<NURSING:I级护理>",
+    "21": "<ORDER:TEMP>",
+    "184": "<DIET:术前禁食水>",
+    "124": "<LAB:血常规>",
+    "125": "<LAB:尿常规>",
+    "38": "<LAB:凝血功能>",
+    "185": "<LAB:肝肾功能>",
+    "40": "<LAB:感染性疾病筛查>",
+    "134": "<EXAM:心电图>",
+    "186": "<EXAM:胸部X光片或胸透>",
+    "187": "<EXAM:腹部立位X光片>",
+    "41": "<REQ:OPTIONAL>",
+    "188": "<LAB:血尿淀粉酶>",
+    "138": "<EXAM:腹部超声>",
+    "189": "<PROC:疑似输尿管结石请泌尿外科会诊_疑似妇科病请妇科会诊>",
+    "190": "<MED:预防性抗菌药物_按卫医发2004_285号执行>",
+    "191": "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>",
+    "192": "<PROC:全身麻醉>",
+    "193": "<PROC:腹腔镜阑尾切除术>",
+    "194": "<LAB:术后标本送病理检查>",
+    "195": "<LAB:术中渗出物送细菌培养及药敏>",
+    "196": "<NURSING:术后平卧6小时_12小时下床活动>",
+    "197": "<STAGE:D2_术后第1天>",
+    "85": "<NURSING:II级护理>",
+    "198": "<DIET:术后全流食>",
+    "199": "<NURSING:下床活动促肠功能恢复>",
+    "200": "<STAGE:D3_术后第2天>",
+    "201": "<DIET:术后半流食>",
+    "202": "<PROC:切口换药与观察排气>",
+    "203": "<STAGE:D4_术后第3天>",
+    "204": "<LAB:复查血常规及相关生化指标>",
+    "205": "<PROC:观察切口有无血肿渗血>",
+    "206": "<STAGE:D5_术后第4天>",
+    "207": "<PROC:观察切口有无感染>",
+    "208": "<STAGE:D6_D7_术后第5_6天出院日>",
+    "93": "<NURSING:III级护理>",
+    "209": "<DIET:普食>",
+    "154": "<ORDER:DISCHARGE>",
+    "210": "<DISCHARGE:患者一般情况良好恢复正常饮食>",
+    "211": "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>",
+    "212": "<DISCHARGE:切口愈合良好可在门诊拆线>",
+    "213": "<VARIATION:阑尾周围脓肿先抗炎或穿刺引流必要时II期切除>",
+    "214": "<VARIATION:继发切口或腹腔或门脉系统感染>",
+    "215": "<VARIATION:出现其他内外科疾病需明确诊断>",
+    "5": "<CP_END>"
+  },
+  "token_details": {
+    "<pad>": {
+      "id": 0,
+      "category": "special",
+      "description": "填充占位词元"
+    },
+    "<unk>": {
+      "id": 1,
+      "category": "special",
+      "description": "未知词元"
+    },
+    "<s>": {
+      "id": 2,
+      "category": "special",
+      "description": "序列起始符"
+    },
+    "</s>": {
+      "id": 3,
+      "category": "special",
+      "description": "序列结束符"
+    },
+    "<CP_START>": {
+      "id": 4,
+      "category": "special",
+      "description": "临床路径序列开始"
+    },
+    "<PATHWAY:急性单纯性阑尾炎行腹腔镜阑尾切除术>": {
+      "id": 172,
+      "category": "meta",
+      "description": "病种与术式标准名称"
+    },
+    "<ICD10:K35.1_K35.9>": {
+      "id": 173,
+      "category": "meta",
+      "description": "第一诊断ICD-10编码（K35.1/K35.9）"
+    },
+    "<ICD9CM3:47.09>": {
+      "id": 174,
+      "category": "meta",
+      "description": "手术操作编码ICD9CM-3：47.09"
+    },
+    "<SPEC:普通外科>": {
+      "id": 175,
+      "category": "meta",
+      "description": "所属临床专科"
+    },
+    "<STAY:≤7天>": {
+      "id": 176,
+      "category": "meta",
+      "description": "标准住院日≤7天"
+    },
+    "<VER:2016年版>": {
+      "id": 177,
+      "category": "meta",
+      "description": "卫计委2016年版"
+    },
+    "<COND:第一诊断符合ICD10_K35.1或K35.9>": {
+      "id": 178,
+      "category": "cond",
+      "description": "进入标准：符合急性单纯性阑尾炎编码"
+    },
+    "<COND:有手术适应证无手术禁忌证>": {
+      "id": 179,
+      "category": "cond",
+      "description": "进入标准：有手术指征无禁忌"
+    },
+    "<COND:转移性右下腹痛病史>": {
+      "id": 180,
+      "category": "cond",
+      "description": "诊断依据：转移性右下腹痛"
+    },
+    "<COND:腰大肌_结肠充气_闭孔内肌试验及直肠指诊>": {
+      "id": 181,
+      "category": "cond",
+      "description": "体格检查：三大试验及直肠指诊"
+    },
+    "<EXCLUDE:手术风险大或不能耐受全麻者>": {
+      "id": 182,
+      "category": "exclude",
+      "description": "方案分支/排除：不能耐受全麻可改开腹或抗炎保守"
+    },
+    "<STAGE:D1_急诊手术日>": {
+      "id": 183,
+      "category": "stage",
+      "description": "住院第1天：急诊入院、术前准备与手术当日"
+    },
+    "<ORDER:LONG>": {
+      "id": 63,
+      "category": "order",
+      "description": "长期医嘱"
+    },
+    "<REQ:REQUIRED>": {
+      "id": 22,
+      "category": "req",
+      "description": "必选执行"
+    },
+    "<NURSING:I级护理>": {
+      "id": 81,
+      "category": "nursing",
+      "description": "I级护理"
+    },
+    "<ORDER:TEMP>": {
+      "id": 21,
+      "category": "order",
+      "description": "临时医嘱"
+    },
+    "<DIET:术前禁食水>": {
+      "id": 184,
+      "category": "diet",
+      "description": "术前禁食水"
+    },
+    "<LAB:血常规>": {
+      "id": 124,
+      "category": "lab",
+      "description": "必查：血常规"
+    },
+    "<LAB:尿常规>": {
+      "id": 125,
+      "category": "lab",
+      "description": "必查：尿常规"
+    },
+    "<LAB:凝血功能>": {
+      "id": 38,
+      "category": "lab",
+      "description": "溶栓或急诊PCI前必查：凝血功能"
+    },
+    "<LAB:肝肾功能>": {
+      "id": 185,
+      "category": "lab",
+      "description": "查肝肾功能"
+    },
+    "<LAB:感染性疾病筛查>": {
+      "id": 40,
+      "category": "lab",
+      "description": "必查：乙丙肝、HIV、梅毒筛查"
+    },
+    "<EXAM:心电图>": {
+      "id": 134,
+      "category": "exam",
+      "description": "必查：心电图"
+    },
+    "<EXAM:胸部X光片或胸透>": {
+      "id": 186,
+      "category": "exam",
+      "description": "胸透或胸部X光片"
+    },
+    "<EXAM:腹部立位X光片>": {
+      "id": 187,
+      "category": "exam",
+      "description": "腹部立位X光片除外穿孔梗阻"
+    },
+    "<REQ:OPTIONAL>": {
+      "id": 41,
+      "category": "req",
+      "description": "根据病情可选项目"
+    },
+    "<LAB:血尿淀粉酶>": {
+      "id": 188,
+      "category": "lab",
+      "description": "可疑胰腺炎时查血尿淀粉酶"
+    },
+    "<EXAM:腹部超声>": {
+      "id": 138,
+      "category": "exam",
+      "description": "可选：腹部超声"
+    },
+    "<PROC:疑似输尿管结石请泌尿外科会诊_疑似妇科病请妇科会诊>": {
+      "id": 189,
+      "category": "proc",
+      "description": "鉴别诊断会诊"
+    },
+    "<MED:预防性抗菌药物_按卫医发2004_285号执行>": {
+      "id": 190,
+      "category": "med",
+      "description": "按《抗菌药物临床应用指导原则》选药"
+    },
+    "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>": {
+      "id": 191,
+      "category": "cond",
+      "description": "预防性抗菌药物给药时机约束"
+    },
+    "<PROC:全身麻醉>": {
+      "id": 192,
+      "category": "proc",
+      "description": "麻醉方式：全身麻醉"
+    },
+    "<PROC:腹腔镜阑尾切除术>": {
+      "id": 193,
+      "category": "proc",
+      "description": "手术方式：腹腔镜阑尾切除术"
+    },
+    "<LAB:术后标本送病理检查>": {
+      "id": 194,
+      "category": "lab",
+      "description": "术后标本常规送病理检查"
+    },
+    "<LAB:术中渗出物送细菌培养及药敏>": {
+      "id": 195,
+      "category": "lab",
+      "description": "术中局部渗出物宜送细菌培养及药敏试验"
+    },
+    "<NURSING:术后平卧6小时_12小时下床活动>": {
+      "id": 196,
+      "category": "nursing",
+      "description": "术后回病房平卧6小时，12小时可下床活动"
+    },
+    "<STAGE:D2_术后第1天>": {
+      "id": 197,
+      "category": "stage",
+      "description": "住院第2天（术后第1天）"
+    },
+    "<NURSING:II级护理>": {
+      "id": 85,
+      "category": "nursing",
+      "description": "II级护理"
+    },
+    "<DIET:术后全流食>": {
+      "id": 198,
+      "category": "diet",
+      "description": "肠功能恢复后进全流食"
+    },
+    "<NURSING:下床活动促肠功能恢复>": {
+      "id": 199,
+      "category": "nursing",
+      "description": "嘱下床活动以利于肠功能恢复"
+    },
+    "<STAGE:D3_术后第2天>": {
+      "id": 200,
+      "category": "stage",
+      "description": "住院第3天（术后第2天）"
+    },
+    "<DIET:术后半流食>": {
+      "id": 201,
+      "category": "diet",
+      "description": "术后半流食"
+    },
+    "<PROC:切口换药与观察排气>": {
+      "id": 202,
+      "category": "proc",
+      "description": "术后2-3天切口换药并观察是否排气"
+    },
+    "<STAGE:D4_术后第3天>": {
+      "id": 203,
+      "category": "stage",
+      "description": "住院第4天（术后第3天）"
+    },
+    "<LAB:复查血常规及相关生化指标>": {
+      "id": 204,
+      "category": "lab",
+      "description": "复查血常规及相关指标"
+    },
+    "<PROC:观察切口有无血肿渗血>": {
+      "id": 205,
+      "category": "proc",
+      "description": "观察切口有无血肿、渗血"
+    },
+    "<STAGE:D5_术后第4天>": {
+      "id": 206,
+      "category": "stage",
+      "description": "住院第5天（术后第4天）"
+    },
+    "<PROC:观察切口有无感染>": {
+      "id": 207,
+      "category": "proc",
+      "description": "观察切口有无感染，及时处理"
+    },
+    "<STAGE:D6_D7_术后第5_6天出院日>": {
+      "id": 208,
+      "category": "stage",
+      "description": "住院第6-7天（术后第5-6天出院日）"
+    },
+    "<NURSING:III级护理>": {
+      "id": 93,
+      "category": "nursing",
+      "description": "III级护理"
+    },
+    "<DIET:普食>": {
+      "id": 209,
+      "category": "diet",
+      "description": "过渡至普食"
+    },
+    "<ORDER:DISCHARGE>": {
+      "id": 154,
+      "category": "order",
+      "description": "出院医嘱"
+    },
+    "<DISCHARGE:患者一般情况良好恢复正常饮食>": {
+      "id": 210,
+      "category": "discharge",
+      "description": "出院标准1：一般情况良好恢复正常饮食"
+    },
+    "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>": {
+      "id": 211,
+      "category": "discharge",
+      "description": "出院标准2：体温正常腹部无阳性体征"
+    },
+    "<DISCHARGE:切口愈合良好可在门诊拆线>": {
+      "id": 212,
+      "category": "discharge",
+      "description": "出院标准3：切口愈合良好（可门诊拆线）"
+    },
+    "<VARIATION:阑尾周围脓肿先抗炎或穿刺引流必要时II期切除>": {
+      "id": 213,
+      "category": "variation",
+      "description": "变异1：阑尾周围脓肿形成"
+    },
+    "<VARIATION:继发切口或腹腔或门脉系统感染>": {
+      "id": 214,
+      "category": "variation",
+      "description": "变异2：术后继发感染并发症"
+    },
+    "<VARIATION:出现其他内外科疾病需明确诊断>": {
+      "id": 215,
+      "category": "variation",
+      "description": "变异3：伴发其他内外科疾病延长住院"
+    },
+    "<CP_END>": {
+      "id": 5,
+      "category": "special",
+      "description": "临床路径序列结束"
+    }
+  }
+}

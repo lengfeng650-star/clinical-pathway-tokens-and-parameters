@@ -1,0 +1,3309 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "<pad>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "<unk>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "<s>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "</s>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "<CP_START>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 5,
+      "content": "<CP_END>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 6,
+      "content": "<PATHWAY:急性ST段抬高心肌梗死>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 7,
+      "content": "<ICD10:I21.0-I21.3>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 8,
+      "content": "<SPEC:心血管内科_急诊介入>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 9,
+      "content": "<STAY:10_14天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 10,
+      "content": "<VER:2009版>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 11,
+      "content": "<COND:持续剧烈胸痛大于30分钟>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 12,
+      "content": "<COND:含服硝酸甘油不缓解>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 13,
+      "content": "<COND:两相邻导联ST段抬高≥0.1mV>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 14,
+      "content": "<COND:心肌损伤标记物异常升高>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 15,
+      "content": "<COND:发病小于12小时适用>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 16,
+      "content": "<EXCLUDE:主动脉夹层>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 17,
+      "content": "<EXCLUDE:急性肺栓塞>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 18,
+      "content": "<EXCLUDE:严重机械性并发症>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 19,
+      "content": "<EXCLUDE:择期PCI患者>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 20,
+      "content": "<STAGE:T0_10MIN_到达急诊科>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 21,
+      "content": "<ORDER:TEMP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 22,
+      "content": "<REQ:REQUIRED>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 23,
+      "content": "<EXAM:18导联心电图>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 24,
+      "content": "<NURSING:卧床禁活动>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 25,
+      "content": "<PROC:吸氧>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 26,
+      "content": "<PROC:建立静脉通道>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 27,
+      "content": "<NURSING:持续心电血压血氧监护>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 28,
+      "content": "<NURSING:除颤准备>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 29,
+      "content": "<LAB:心肌损伤标记物测定_不等待结果>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 30,
+      "content": "<STAGE:T11_30MIN_再灌注决策>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 31,
+      "content": "<PROC:心内科二线医师5分钟内会诊>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 32,
+      "content": "<PROC:评估溶栓与直接PCI适应证禁忌证>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 33,
+      "content": "<NURSING:特级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 34,
+      "content": "<DIET:禁食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 35,
+      "content": "<MED:镇静止痛药_吗啡或杜冷丁>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 36,
+      "content": "<MED:硝酸酯类药物>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 37,
+      "content": "<LAB:血常规及血型>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 38,
+      "content": "<LAB:凝血功能>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 39,
+      "content": "<LAB:肝肾功能电解质血糖>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 40,
+      "content": "<LAB:感染性疾病筛查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 41,
+      "content": "<REQ:OPTIONAL>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 42,
+      "content": "<LAB:血脂_D二聚体_BNP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 43,
+      "content": "<LAB:尿便常规加潜血酮体>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 44,
+      "content": "<LAB:动脉血气分析>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 45,
+      "content": "<EXAM:床旁胸部X光片>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 46,
+      "content": "<EXAM:床旁心脏超声>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 47,
+      "content": "<COND:急诊PCI指标D2B小于90分钟>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 48,
+      "content": "<COND:急诊溶栓指标D2N小于30分钟>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 49,
+      "content": "<BRANCH:直接PCI分支>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 50,
+      "content": "<STAGE:T31_90MIN_直接PCI治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 51,
+      "content": "<PROC:局部麻醉>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 52,
+      "content": "<PROC:直接经皮冠状动脉介入治疗_PCI>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 53,
+      "content": "<PROC:植入冠状动脉内支架>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 54,
+      "content": "<MED:普通肝素或低分子肝素>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 55,
+      "content": "<MED:阿司匹林>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 56,
+      "content": "<MED:氯吡格雷>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 57,
+      "content": "<MED:GPIIb_IIIa受体拮抗剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 58,
+      "content": "<MED:血管活性药与抗心律失常药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 59,
+      "content": "<BRANCH:静脉溶栓分支>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 60,
+      "content": "<STAGE:T31_90MIN_静脉溶栓治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 61,
+      "content": "<PROC:急诊静脉溶栓治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 62,
+      "content": "<STAGE:D1_CCU24H监护>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 63,
+      "content": "<ORDER:LONG>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 64,
+      "content": "<NURSING:急性心肌梗死护理常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 65,
+      "content": "<NURSING:记24小时出入量>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 66,
+      "content": "<DIET:流食或半流食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 67,
+      "content": "<NURSING:保持大便通畅>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 68,
+      "content": "<MED:β受体阻滞剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 69,
+      "content": "<MED:ACEI或ARB>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 70,
+      "content": "<MED:他汀类药物>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 71,
+      "content": "<MED:术后低分子肝素2至8天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 72,
+      "content": "<PROC:下达病危通知>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 73,
+      "content": "<LAB:心肌损伤标记物_每6小时至发病24小时>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 74,
+      "content": "<STAGE:D2_CCU24_48H>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 75,
+      "content": "<NURSING:特级或I级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 76,
+      "content": "<NURSING:卧床或床旁活动>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 77,
+      "content": "<MED:胺碘酮_恶性心律失常>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 78,
+      "content": "<MED:利尿剂_心力衰竭>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 79,
+      "content": "<MED:多巴胺_低血压>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 80,
+      "content": "<STAGE:D3_CCU48_72H>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 81,
+      "content": "<NURSING:I级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 82,
+      "content": "<DIET:半流食或低盐低脂普食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 83,
+      "content": "<PROC:评估转出CCU>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 84,
+      "content": "<STAGE:D4_D9_普通病房康复>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 85,
+      "content": "<NURSING:II级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 86,
+      "content": "<NURSING:室内或室外活动>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 87,
+      "content": "<NURSING:二级预防宣教>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 88,
+      "content": "<LAB:血尿便常规及生化凝血复查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 89,
+      "content": "<EXAM:心脏超声心动图>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 90,
+      "content": "<EXAM:胸部X光片>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 91,
+      "content": "<PROC:再次血运重建评估_择期PCI或CABG>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 92,
+      "content": "<STAGE:D10_D14_出院日>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 93,
+      "content": "<NURSING:III级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 94,
+      "content": "<DISCHARGE:生命体征平稳>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 95,
+      "content": "<DISCHARGE:血液动力学稳定>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 96,
+      "content": "<DISCHARGE:心电稳定>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 97,
+      "content": "<DISCHARGE:心功能稳定>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 98,
+      "content": "<DISCHARGE:心肌缺血症状有效控制>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 99,
+      "content": "<VARIATION:冠脉造影后转外科急诊CABG>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 100,
+      "content": "<VARIATION:等待二次择期PCI或CABG>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 101,
+      "content": "<VARIATION:合并症危重不能出CCU>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 102,
+      "content": "<VARIATION:患者拒绝出院>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 103,
+      "content": "<PATHWAY:慢性阻塞性肺疾病急性加重期>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 104,
+      "content": "<ICD10:J44.001或J44.101>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 105,
+      "content": "<SPEC:呼吸内科>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 106,
+      "content": "<STAY:10_22天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 107,
+      "content": "<VER:2016汇总版>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 108,
+      "content": "<COND:有COPD病史且超越日常持续恶化>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 109,
+      "content": "<COND:短期内咳嗽咳痰气短喘息加重>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 110,
+      "content": "<COND:痰量增多呈脓性或黏脓性可伴发热>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 111,
+      "content": "<EXCLUDE:有气管插管指征转ICU退出路径>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 112,
+      "content": "<STAGE:D1_入院初诊与呼吸衰竭评估>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 113,
+      "content": "<NURSING:AECOPD护理常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 114,
+      "content": "<NURSING:特级或I至III级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 115,
+      "content": "<PROC:控制性氧疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 116,
+      "content": "<MED:抗生素>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 117,
+      "content": "<MED:祛痰剂与止咳剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 118,
+      "content": "<MED:支气管舒张剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 119,
+      "content": "<MED:糖皮质激素>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 120,
+      "content": "<PROC:无创正压通气_重症>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 121,
+      "content": "<NURSING:吸痰>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 122,
+      "content": "<NURSING:记出入量>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 123,
+      "content": "<MED:抑酸剂或胃黏膜保护剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 124,
+      "content": "<LAB:血常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 125,
+      "content": "<LAB:尿常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 126,
+      "content": "<LAB:便常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 127,
+      "content": "<LAB:D二聚体>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 128,
+      "content": "<LAB:红细胞沉降率与CRP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 129,
+      "content": "<LAB:术前免疫八项>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 130,
+      "content": "<LAB:痰涂片找细菌真菌抗酸杆菌>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 131,
+      "content": "<LAB:痰培养加药敏试验>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 132,
+      "content": "<LAB:支原体衣原体结核军团菌抗体>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 133,
+      "content": "<EXAM:胸部正侧位X线片>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 134,
+      "content": "<EXAM:心电图>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 135,
+      "content": "<EXAM:肺功能_通气加支气管舒张试验>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 136,
+      "content": "<EXAM:超声心动图>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 137,
+      "content": "<EXAM:肺CT>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 138,
+      "content": "<EXAM:腹部超声>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 139,
+      "content": "<EXAM:下肢超声>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 140,
+      "content": "<NURSING:戒烟宣教>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 141,
+      "content": "<NURSING:指导氧疗与吸入装置使用>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 142,
+      "content": "<STAGE:D2_D3_急性期联合治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 143,
+      "content": "<MED:吸入糖皮质激素_长效β激动剂_长效抗胆碱能药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 144,
+      "content": "<MED:低分子肝素>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 145,
+      "content": "<PROC:纠正水电解质失衡>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 146,
+      "content": "<NURSING:教会有效咳嗽与拍背排痰>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 147,
+      "content": "<STAGE:D4_D7_病情稳定与激素减量>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 148,
+      "content": "<MED:糖皮质激素减量>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 149,
+      "content": "<NURSING:指导缩唇呼吸与腹肌体力康复训练>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 150,
+      "content": "<STAGE:D8_D9_出院前家庭氧疗准备>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 151,
+      "content": "<NURSING:II或III级护理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 152,
+      "content": "<NURSING:交代长期家庭氧疗配备及方法>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 153,
+      "content": "<STAGE:D10_D22_出院日>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 154,
+      "content": "<ORDER:DISCHARGE>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 155,
+      "content": "<MED:出院带药_祛痰止咳与支气管舒张剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 156,
+      "content": "<MED:出院带药_吸入糖皮质激素与长效β激动剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 157,
+      "content": "<MED:出院带药_长效抗胆碱能药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 158,
+      "content": "<MED:出院带药_短效β2激动剂或抗胆碱药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 159,
+      "content": "<MED:出院带药_抗生素>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 160,
+      "content": "<NURSING:含激素吸入剂后需漱口宣教>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 161,
+      "content": "<DISCHARGE:吸入支气管舒张剂不超过4小时一次>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 162,
+      "content": "<DISCHARGE:能进食和睡眠不因呼吸困难唤醒>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 163,
+      "content": "<DISCHARGE:能在室内活动>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 164,
+      "content": "<DISCHARGE:低氧与高碳酸血症血气稳定12至24小时>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 165,
+      "content": "<DISCHARGE:临床稳定12至24小时>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 166,
+      "content": "<DISCHARGE:理解吸入药物规范使用>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 167,
+      "content": "<VARIATION:严重并发症需专科治疗退出路径>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 168,
+      "content": "<VARIATION:出现治疗不良反应>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 169,
+      "content": "<VARIATION:病情加重达呼吸支持标准退出路径>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 170,
+      "content": "<VARIATION:合并其他疾病需特殊处理退出路径>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 171,
+      "content": "<VARIATION:患者拒绝出院退出路径>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 172,
+      "content": "<PATHWAY:急性单纯性阑尾炎行腹腔镜阑尾切除术>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 173,
+      "content": "<ICD10:K35.1_K35.9>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 174,
+      "content": "<ICD9CM3:47.09>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 175,
+      "content": "<SPEC:普通外科>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 176,
+      "content": "<STAY:≤7天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 177,
+      "content": "<VER:2016年版>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 178,
+      "content": "<COND:第一诊断符合ICD10_K35.1或K35.9>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 179,
+      "content": "<COND:有手术适应证无手术禁忌证>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 180,
+      "content": "<COND:转移性右下腹痛病史>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 181,
+      "content": "<COND:腰大肌_结肠充气_闭孔内肌试验及直肠指诊>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 182,
+      "content": "<EXCLUDE:手术风险大或不能耐受全麻者>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 183,
+      "content": "<STAGE:D1_急诊手术日>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 184,
+      "content": "<DIET:术前禁食水>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 185,
+      "content": "<LAB:肝肾功能>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 186,
+      "content": "<EXAM:胸部X光片或胸透>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 187,
+      "content": "<EXAM:腹部立位X光片>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 188,
+      "content": "<LAB:血尿淀粉酶>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 189,
+      "content": "<PROC:疑似输尿管结石请泌尿外科会诊_疑似妇科病请妇科会诊>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 190,
+      "content": "<MED:预防性抗菌药物_按卫医发2004_285号执行>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 191,
+      "content": "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 192,
+      "content": "<PROC:全身麻醉>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 193,
+      "content": "<PROC:腹腔镜阑尾切除术>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 194,
+      "content": "<LAB:术后标本送病理检查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 195,
+      "content": "<LAB:术中渗出物送细菌培养及药敏>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 196,
+      "content": "<NURSING:术后平卧6小时_12小时下床活动>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 197,
+      "content": "<STAGE:D2_术后第1天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 198,
+      "content": "<DIET:术后全流食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 199,
+      "content": "<NURSING:下床活动促肠功能恢复>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 200,
+      "content": "<STAGE:D3_术后第2天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 201,
+      "content": "<DIET:术后半流食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 202,
+      "content": "<PROC:切口换药与观察排气>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 203,
+      "content": "<STAGE:D4_术后第3天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 204,
+      "content": "<LAB:复查血常规及相关生化指标>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 205,
+      "content": "<PROC:观察切口有无血肿渗血>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 206,
+      "content": "<STAGE:D5_术后第4天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 207,
+      "content": "<PROC:观察切口有无感染>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 208,
+      "content": "<STAGE:D6_D7_术后第5_6天出院日>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 209,
+      "content": "<DIET:普食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 210,
+      "content": "<DISCHARGE:患者一般情况良好恢复正常饮食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 211,
+      "content": "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 212,
+      "content": "<DISCHARGE:切口愈合良好可在门诊拆线>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 213,
+      "content": "<VARIATION:阑尾周围脓肿先抗炎或穿刺引流必要时II期切除>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 214,
+      "content": "<VARIATION:继发切口或腹腔或门脉系统感染>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 215,
+      "content": "<VARIATION:出现其他内外科疾病需明确诊断>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 216,
+      "content": "<PATHWAY:小儿支气管肺炎>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 217,
+      "content": "<ICD10:J18.0>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 218,
+      "content": "<SPEC:儿科_小儿内科>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 219,
+      "content": "<VER:2010年版>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 220,
+      "content": "<COND:第一诊断符合ICD10_J18.0支气管肺炎>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 221,
+      "content": "<COND:发热咳嗽气促_重者鼻翼扇动发绀三凹征>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 222,
+      "content": "<COND:两肺闻及固定性细湿啰音>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 223,
+      "content": "<COND:胸片示沿支气管分布小斑片状浸润影>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 224,
+      "content": "<NURSING:维持室温18至20度_湿度55%>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 225,
+      "content": "<STAGE:D1_入院评估与治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 226,
+      "content": "<NURSING:儿内科一级护理常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 227,
+      "content": "<DIET:热量丰富易消化饮食与充足水分>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 228,
+      "content": "<MED:敏感抗生素_按卫医发2004_285号执行>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 229,
+      "content": "<MED:祛痰镇咳剂>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 230,
+      "content": "<MED:解痉平喘药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 231,
+      "content": "<PROC:吸痰>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 232,
+      "content": "<PROC:压缩雾化吸入>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 233,
+      "content": "<LAB:血常规及CRP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 234,
+      "content": "<LAB:粪常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 235,
+      "content": "<EXAM:胸部X线平片>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 236,
+      "content": "<LAB:呼吸道病毒与细菌病原学检查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 237,
+      "content": "<LAB:血支原体与衣原体测定>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 238,
+      "content": "<LAB:心肌酶谱及肝肾功能>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 239,
+      "content": "<NURSING:加强拍背排痰及体温监测>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 240,
+      "content": "<STAGE:D2_检查完善与病情观察>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 241,
+      "content": "<EXAM:肺功能检查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 242,
+      "content": "<STAGE:D3_病原复查与呼吸支持>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 243,
+      "content": "<PROC:支气管镜检查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 244,
+      "content": "<LAB:血清过敏原检查>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 245,
+      "content": "<NURSING:皮肤口腔清洁与少食多餐>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 246,
+      "content": "<STAGE:D4_实验室追踪与脏器保护>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 247,
+      "content": "<PROC:根据病情营养心肌及保护肝脏>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 248,
+      "content": "<LAB:复查血清支原体抗体>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 249,
+      "content": "<STAGE:D5_D9_肺部炎症吸收期>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 250,
+      "content": "<EXAM:复查胸片>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 251,
+      "content": "<NURSING:观察药物副作用_皮疹胃肠反应>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 252,
+      "content": "<MED:出院带药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 253,
+      "content": "<NURSING:交代勤洗手防交叉感染及复诊>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 254,
+      "content": "<DISCHARGE:咳嗽明显减轻>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 255,
+      "content": "<DISCHARGE:连续3天腋温小于37.5度>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 256,
+      "content": "<DISCHARGE:肺体征改善>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 257,
+      "content": "<DISCHARGE:X线胸片示炎症明显吸收>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 258,
+      "content": "<VARIATION:出现心衰呼衰DIC或中毒性脑病退出路径>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 259,
+      "content": "<VARIATION:难治性肺炎体温不退改用抗菌药物>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 260,
+      "content": "<VARIATION:并发脓胸或脓气胸行胸腔闭式引流>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 261,
+      "content": "<PATHWAY:结肠癌根治切除手术>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 262,
+      "content": "<ICD10:C18>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 263,
+      "content": "<ICD9CM3:45.73_45.79_45.8>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 264,
+      "content": "<SPEC:普通外科_肿瘤外科>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 265,
+      "content": "<STAY:14_16天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 266,
+      "content": "<COST:2_4万元>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 267,
+      "content": "<VER:2012年版>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 268,
+      "content": "<COND:可R0切除结肠癌_I期II期或部分III期>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 269,
+      "content": "<COND:有手术适应证无绝对禁忌证>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 270,
+      "content": "<STAGE:D1_术前第3天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 271,
+      "content": "<DIET:半流质或无渣流质或禁食水>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 272,
+      "content": "<LAB:粪便常规加潜血>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 273,
+      "content": "<LAB:血清肿瘤标志物_CEA_CA199>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 274,
+      "content": "<EXAM:结肠镜取活检病理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 275,
+      "content": "<EXAM:胸部X线或胸部平扫CT>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 276,
+      "content": "<EXAM:全腹部强化CT或超声>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 277,
+      "content": "<EXAM:血气肺功能超声心动图_高龄危重>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 278,
+      "content": "<EXAM:全结肠直肠气钡双重造影>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 279,
+      "content": "<EXAM:全身ECT骨扫描_疑似骨转移>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 280,
+      "content": "<STAGE:D2_术前第2天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 281,
+      "content": "<PROC:三级医师查房与术前讨论>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 282,
+      "content": "<COND:不完全性肠梗阻入院起每日2次小剂量泻药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 283,
+      "content": "<EXCLUDE:完全性肠梗阻禁忌任何肠道准备>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 284,
+      "content": "<STAGE:D3_术前第1天肠道准备>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 285,
+      "content": "<PROC:晚8点口服复方聚乙二醇清洁肠道>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 286,
+      "content": "<PROC:备皮>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 287,
+      "content": "<LAB:检查血型并备血制品>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 288,
+      "content": "<MED:睡前安定10mg肌注_酌情>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 289,
+      "content": "<PROC:签署手术麻醉输血同意书>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 290,
+      "content": "<STAGE:D4_手术日>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 291,
+      "content": "<MED:二代头孢菌素或头孢曲松或头孢噻肟_可加甲硝唑>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 292,
+      "content": "<PROC:全麻或静脉复合连续硬膜外麻醉>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 293,
+      "content": "<PROC:结肠癌根治切除术>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 294,
+      "content": "<PROC:肠道吻合器应用>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 295,
+      "content": "<LAB:术后标本全送病理_符合2010诊疗规范>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 296,
+      "content": "<NURSING:全麻经腹结肠癌根治术后护理常规>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 297,
+      "content": "<DIET:禁食水>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 298,
+      "content": "<NURSING:心电监护吸氧留置导尿记出入量>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 299,
+      "content": "<MED:抑酸化痰和镇痛治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 300,
+      "content": "<MED:静脉肠外营养治疗>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 301,
+      "content": "<LAB:复查血常规及相关指标>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 302,
+      "content": "<STAGE:D5_D6_术后第1_2天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 303,
+      "content": "<PROC:雾化吸入>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 304,
+      "content": "<DIET:试饮水>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 305,
+      "content": "<NURSING:尿管q4h开放>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 306,
+      "content": "<NURSING:床上及下肢活动预防DVT>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 307,
+      "content": "<NURSING:拍背排痰>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 308,
+      "content": "<STAGE:D7_D8_术后第3_4天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 309,
+      "content": "<DIET:酌情进流质或半流质>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 310,
+      "content": "<PROC:停用心电监护吸氧与导尿管>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 311,
+      "content": "<MED:停用预防性抗菌药物>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 312,
+      "content": "<PROC:腹部切口换药>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 313,
+      "content": "<STAGE:D9_D10_术后第5_6天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 314,
+      "content": "<DIET:半流食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 315,
+      "content": "<PROC:已排气排粪拔除引流管>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 316,
+      "content": "<STAGE:D11_D12_术后第7_8天>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 317,
+      "content": "<MED:停用治疗性抗菌药物>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 318,
+      "content": "<PROC:腹部切口换药与间断拆线>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 319,
+      "content": "<PROC:根据病理分期制定术后化疗方案>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 320,
+      "content": "<STAGE:D13_D14_术后第9_10天拆线>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 321,
+      "content": "<DIET:普通饮食>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 322,
+      "content": "<PROC:腹部切口拆线>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 323,
+      "content": "<STAGE:D14_D16_出院日>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 324,
+      "content": "<DISCHARGE:一般情况良好恢复正常饮食和肠道功能>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 325,
+      "content": "<DISCHARGE:腹部切口II_甲愈合>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 326,
+      "content": "<VARIATION:完全肠梗阻一期行双腔造口术>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 327,
+      "content": "<VARIATION:围手术期并发症延长住院>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 328,
+      "content": "<VARIATION:结肠癌肝转移切除术酌情处理>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "WhitespaceSplit"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "WordLevel",
+    "vocab": {
+      "<pad>": 0,
+      "<unk>": 1,
+      "<s>": 2,
+      "</s>": 3,
+      "<CP_START>": 4,
+      "<CP_END>": 5,
+      "<PATHWAY:急性ST段抬高心肌梗死>": 6,
+      "<ICD10:I21.0-I21.3>": 7,
+      "<SPEC:心血管内科_急诊介入>": 8,
+      "<STAY:10_14天>": 9,
+      "<VER:2009版>": 10,
+      "<COND:持续剧烈胸痛大于30分钟>": 11,
+      "<COND:含服硝酸甘油不缓解>": 12,
+      "<COND:两相邻导联ST段抬高≥0.1mV>": 13,
+      "<COND:心肌损伤标记物异常升高>": 14,
+      "<COND:发病小于12小时适用>": 15,
+      "<EXCLUDE:主动脉夹层>": 16,
+      "<EXCLUDE:急性肺栓塞>": 17,
+      "<EXCLUDE:严重机械性并发症>": 18,
+      "<EXCLUDE:择期PCI患者>": 19,
+      "<STAGE:T0_10MIN_到达急诊科>": 20,
+      "<ORDER:TEMP>": 21,
+      "<REQ:REQUIRED>": 22,
+      "<EXAM:18导联心电图>": 23,
+      "<NURSING:卧床禁活动>": 24,
+      "<PROC:吸氧>": 25,
+      "<PROC:建立静脉通道>": 26,
+      "<NURSING:持续心电血压血氧监护>": 27,
+      "<NURSING:除颤准备>": 28,
+      "<LAB:心肌损伤标记物测定_不等待结果>": 29,
+      "<STAGE:T11_30MIN_再灌注决策>": 30,
+      "<PROC:心内科二线医师5分钟内会诊>": 31,
+      "<PROC:评估溶栓与直接PCI适应证禁忌证>": 32,
+      "<NURSING:特级护理>": 33,
+      "<DIET:禁食>": 34,
+      "<MED:镇静止痛药_吗啡或杜冷丁>": 35,
+      "<MED:硝酸酯类药物>": 36,
+      "<LAB:血常规及血型>": 37,
+      "<LAB:凝血功能>": 38,
+      "<LAB:肝肾功能电解质血糖>": 39,
+      "<LAB:感染性疾病筛查>": 40,
+      "<REQ:OPTIONAL>": 41,
+      "<LAB:血脂_D二聚体_BNP>": 42,
+      "<LAB:尿便常规加潜血酮体>": 43,
+      "<LAB:动脉血气分析>": 44,
+      "<EXAM:床旁胸部X光片>": 45,
+      "<EXAM:床旁心脏超声>": 46,
+      "<COND:急诊PCI指标D2B小于90分钟>": 47,
+      "<COND:急诊溶栓指标D2N小于30分钟>": 48,
+      "<BRANCH:直接PCI分支>": 49,
+      "<STAGE:T31_90MIN_直接PCI治疗>": 50,
+      "<PROC:局部麻醉>": 51,
+      "<PROC:直接经皮冠状动脉介入治疗_PCI>": 52,
+      "<PROC:植入冠状动脉内支架>": 53,
+      "<MED:普通肝素或低分子肝素>": 54,
+      "<MED:阿司匹林>": 55,
+      "<MED:氯吡格雷>": 56,
+      "<MED:GPIIb_IIIa受体拮抗剂>": 57,
+      "<MED:血管活性药与抗心律失常药>": 58,
+      "<BRANCH:静脉溶栓分支>": 59,
+      "<STAGE:T31_90MIN_静脉溶栓治疗>": 60,
+      "<PROC:急诊静脉溶栓治疗>": 61,
+      "<STAGE:D1_CCU24H监护>": 62,
+      "<ORDER:LONG>": 63,
+      "<NURSING:急性心肌梗死护理常规>": 64,
+      "<NURSING:记24小时出入量>": 65,
+      "<DIET:流食或半流食>": 66,
+      "<NURSING:保持大便通畅>": 67,
+      "<MED:β受体阻滞剂>": 68,
+      "<MED:ACEI或ARB>": 69,
+      "<MED:他汀类药物>": 70,
+      "<MED:术后低分子肝素2至8天>": 71,
+      "<PROC:下达病危通知>": 72,
+      "<LAB:心肌损伤标记物_每6小时至发病24小时>": 73,
+      "<STAGE:D2_CCU24_48H>": 74,
+      "<NURSING:特级或I级护理>": 75,
+      "<NURSING:卧床或床旁活动>": 76,
+      "<MED:胺碘酮_恶性心律失常>": 77,
+      "<MED:利尿剂_心力衰竭>": 78,
+      "<MED:多巴胺_低血压>": 79,
+      "<STAGE:D3_CCU48_72H>": 80,
+      "<NURSING:I级护理>": 81,
+      "<DIET:半流食或低盐低脂普食>": 82,
+      "<PROC:评估转出CCU>": 83,
+      "<STAGE:D4_D9_普通病房康复>": 84,
+      "<NURSING:II级护理>": 85,
+      "<NURSING:室内或室外活动>": 86,
+      "<NURSING:二级预防宣教>": 87,
+      "<LAB:血尿便常规及生化凝血复查>": 88,
+      "<EXAM:心脏超声心动图>": 89,
+      "<EXAM:胸部X光片>": 90,
+      "<PROC:再次血运重建评估_择期PCI或CABG>": 91,
+      "<STAGE:D10_D14_出院日>": 92,
+      "<NURSING:III级护理>": 93,
+      "<DISCHARGE:生命体征平稳>": 94,
+      "<DISCHARGE:血液动力学稳定>": 95,
+      "<DISCHARGE:心电稳定>": 96,
+      "<DISCHARGE:心功能稳定>": 97,
+      "<DISCHARGE:心肌缺血症状有效控制>": 98,
+      "<VARIATION:冠脉造影后转外科急诊CABG>": 99,
+      "<VARIATION:等待二次择期PCI或CABG>": 100,
+      "<VARIATION:合并症危重不能出CCU>": 101,
+      "<VARIATION:患者拒绝出院>": 102,
+      "<PATHWAY:慢性阻塞性肺疾病急性加重期>": 103,
+      "<ICD10:J44.001或J44.101>": 104,
+      "<SPEC:呼吸内科>": 105,
+      "<STAY:10_22天>": 106,
+      "<VER:2016汇总版>": 107,
+      "<COND:有COPD病史且超越日常持续恶化>": 108,
+      "<COND:短期内咳嗽咳痰气短喘息加重>": 109,
+      "<COND:痰量增多呈脓性或黏脓性可伴发热>": 110,
+      "<EXCLUDE:有气管插管指征转ICU退出路径>": 111,
+      "<STAGE:D1_入院初诊与呼吸衰竭评估>": 112,
+      "<NURSING:AECOPD护理常规>": 113,
+      "<NURSING:特级或I至III级护理>": 114,
+      "<PROC:控制性氧疗>": 115,
+      "<MED:抗生素>": 116,
+      "<MED:祛痰剂与止咳剂>": 117,
+      "<MED:支气管舒张剂>": 118,
+      "<MED:糖皮质激素>": 119,
+      "<PROC:无创正压通气_重症>": 120,
+      "<NURSING:吸痰>": 121,
+      "<NURSING:记出入量>": 122,
+      "<MED:抑酸剂或胃黏膜保护剂>": 123,
+      "<LAB:血常规>": 124,
+      "<LAB:尿常规>": 125,
+      "<LAB:便常规>": 126,
+      "<LAB:D二聚体>": 127,
+      "<LAB:红细胞沉降率与CRP>": 128,
+      "<LAB:术前免疫八项>": 129,
+      "<LAB:痰涂片找细菌真菌抗酸杆菌>": 130,
+      "<LAB:痰培养加药敏试验>": 131,
+      "<LAB:支原体衣原体结核军团菌抗体>": 132,
+      "<EXAM:胸部正侧位X线片>": 133,
+      "<EXAM:心电图>": 134,
+      "<EXAM:肺功能_通气加支气管舒张试验>": 135,
+      "<EXAM:超声心动图>": 136,
+      "<EXAM:肺CT>": 137,
+      "<EXAM:腹部超声>": 138,
+      "<EXAM:下肢超声>": 139,
+      "<NURSING:戒烟宣教>": 140,
+      "<NURSING:指导氧疗与吸入装置使用>": 141,
+      "<STAGE:D2_D3_急性期联合治疗>": 142,
+      "<MED:吸入糖皮质激素_长效β激动剂_长效抗胆碱能药>": 143,
+      "<MED:低分子肝素>": 144,
+      "<PROC:纠正水电解质失衡>": 145,
+      "<NURSING:教会有效咳嗽与拍背排痰>": 146,
+      "<STAGE:D4_D7_病情稳定与激素减量>": 147,
+      "<MED:糖皮质激素减量>": 148,
+      "<NURSING:指导缩唇呼吸与腹肌体力康复训练>": 149,
+      "<STAGE:D8_D9_出院前家庭氧疗准备>": 150,
+      "<NURSING:II或III级护理>": 151,
+      "<NURSING:交代长期家庭氧疗配备及方法>": 152,
+      "<STAGE:D10_D22_出院日>": 153,
+      "<ORDER:DISCHARGE>": 154,
+      "<MED:出院带药_祛痰止咳与支气管舒张剂>": 155,
+      "<MED:出院带药_吸入糖皮质激素与长效β激动剂>": 156,
+      "<MED:出院带药_长效抗胆碱能药>": 157,
+      "<MED:出院带药_短效β2激动剂或抗胆碱药>": 158,
+      "<MED:出院带药_抗生素>": 159,
+      "<NURSING:含激素吸入剂后需漱口宣教>": 160,
+      "<DISCHARGE:吸入支气管舒张剂不超过4小时一次>": 161,
+      "<DISCHARGE:能进食和睡眠不因呼吸困难唤醒>": 162,
+      "<DISCHARGE:能在室内活动>": 163,
+      "<DISCHARGE:低氧与高碳酸血症血气稳定12至24小时>": 164,
+      "<DISCHARGE:临床稳定12至24小时>": 165,
+      "<DISCHARGE:理解吸入药物规范使用>": 166,
+      "<VARIATION:严重并发症需专科治疗退出路径>": 167,
+      "<VARIATION:出现治疗不良反应>": 168,
+      "<VARIATION:病情加重达呼吸支持标准退出路径>": 169,
+      "<VARIATION:合并其他疾病需特殊处理退出路径>": 170,
+      "<VARIATION:患者拒绝出院退出路径>": 171,
+      "<PATHWAY:急性单纯性阑尾炎行腹腔镜阑尾切除术>": 172,
+      "<ICD10:K35.1_K35.9>": 173,
+      "<ICD9CM3:47.09>": 174,
+      "<SPEC:普通外科>": 175,
+      "<STAY:≤7天>": 176,
+      "<VER:2016年版>": 177,
+      "<COND:第一诊断符合ICD10_K35.1或K35.9>": 178,
+      "<COND:有手术适应证无手术禁忌证>": 179,
+      "<COND:转移性右下腹痛病史>": 180,
+      "<COND:腰大肌_结肠充气_闭孔内肌试验及直肠指诊>": 181,
+      "<EXCLUDE:手术风险大或不能耐受全麻者>": 182,
+      "<STAGE:D1_急诊手术日>": 183,
+      "<DIET:术前禁食水>": 184,
+      "<LAB:肝肾功能>": 185,
+      "<EXAM:胸部X光片或胸透>": 186,
+      "<EXAM:腹部立位X光片>": 187,
+      "<LAB:血尿淀粉酶>": 188,
+      "<PROC:疑似输尿管结石请泌尿外科会诊_疑似妇科病请妇科会诊>": 189,
+      "<MED:预防性抗菌药物_按卫医发2004_285号执行>": 190,
+      "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>": 191,
+      "<PROC:全身麻醉>": 192,
+      "<PROC:腹腔镜阑尾切除术>": 193,
+      "<LAB:术后标本送病理检查>": 194,
+      "<LAB:术中渗出物送细菌培养及药敏>": 195,
+      "<NURSING:术后平卧6小时_12小时下床活动>": 196,
+      "<STAGE:D2_术后第1天>": 197,
+      "<DIET:术后全流食>": 198,
+      "<NURSING:下床活动促肠功能恢复>": 199,
+      "<STAGE:D3_术后第2天>": 200,
+      "<DIET:术后半流食>": 201,
+      "<PROC:切口换药与观察排气>": 202,
+      "<STAGE:D4_术后第3天>": 203,
+      "<LAB:复查血常规及相关生化指标>": 204,
+      "<PROC:观察切口有无血肿渗血>": 205,
+      "<STAGE:D5_术后第4天>": 206,
+      "<PROC:观察切口有无感染>": 207,
+      "<STAGE:D6_D7_术后第5_6天出院日>": 208,
+      "<DIET:普食>": 209,
+      "<DISCHARGE:患者一般情况良好恢复正常饮食>": 210,
+      "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>": 211,
+      "<DISCHARGE:切口愈合良好可在门诊拆线>": 212,
+      "<VARIATION:阑尾周围脓肿先抗炎或穿刺引流必要时II期切除>": 213,
+      "<VARIATION:继发切口或腹腔或门脉系统感染>": 214,
+      "<VARIATION:出现其他内外科疾病需明确诊断>": 215,
+      "<PATHWAY:小儿支气管肺炎>": 216,
+      "<ICD10:J18.0>": 217,
+      "<SPEC:儿科_小儿内科>": 218,
+      "<VER:2010年版>": 219,
+      "<COND:第一诊断符合ICD10_J18.0支气管肺炎>": 220,
+      "<COND:发热咳嗽气促_重者鼻翼扇动发绀三凹征>": 221,
+      "<COND:两肺闻及固定性细湿啰音>": 222,
+      "<COND:胸片示沿支气管分布小斑片状浸润影>": 223,
+      "<NURSING:维持室温18至20度_湿度55%>": 224,
+      "<STAGE:D1_入院评估与治疗>": 225,
+      "<NURSING:儿内科一级护理常规>": 226,
+      "<DIET:热量丰富易消化饮食与充足水分>": 227,
+      "<MED:敏感抗生素_按卫医发2004_285号执行>": 228,
+      "<MED:祛痰镇咳剂>": 229,
+      "<MED:解痉平喘药>": 230,
+      "<PROC:吸痰>": 231,
+      "<PROC:压缩雾化吸入>": 232,
+      "<LAB:血常规及CRP>": 233,
+      "<LAB:粪常规>": 234,
+      "<EXAM:胸部X线平片>": 235,
+      "<LAB:呼吸道病毒与细菌病原学检查>": 236,
+      "<LAB:血支原体与衣原体测定>": 237,
+      "<LAB:心肌酶谱及肝肾功能>": 238,
+      "<NURSING:加强拍背排痰及体温监测>": 239,
+      "<STAGE:D2_检查完善与病情观察>": 240,
+      "<EXAM:肺功能检查>": 241,
+      "<STAGE:D3_病原复查与呼吸支持>": 242,
+      "<PROC:支气管镜检查>": 243,
+      "<LAB:血清过敏原检查>": 244,
+      "<NURSING:皮肤口腔清洁与少食多餐>": 245,
+      "<STAGE:D4_实验室追踪与脏器保护>": 246,
+      "<PROC:根据病情营养心肌及保护肝脏>": 247,
+      "<LAB:复查血清支原体抗体>": 248,
+      "<STAGE:D5_D9_肺部炎症吸收期>": 249,
+      "<EXAM:复查胸片>": 250,
+      "<NURSING:观察药物副作用_皮疹胃肠反应>": 251,
+      "<MED:出院带药>": 252,
+      "<NURSING:交代勤洗手防交叉感染及复诊>": 253,
+      "<DISCHARGE:咳嗽明显减轻>": 254,
+      "<DISCHARGE:连续3天腋温小于37.5度>": 255,
+      "<DISCHARGE:肺体征改善>": 256,
+      "<DISCHARGE:X线胸片示炎症明显吸收>": 257,
+      "<VARIATION:出现心衰呼衰DIC或中毒性脑病退出路径>": 258,
+      "<VARIATION:难治性肺炎体温不退改用抗菌药物>": 259,
+      "<VARIATION:并发脓胸或脓气胸行胸腔闭式引流>": 260,
+      "<PATHWAY:结肠癌根治切除手术>": 261,
+      "<ICD10:C18>": 262,
+      "<ICD9CM3:45.73_45.79_45.8>": 263,
+      "<SPEC:普通外科_肿瘤外科>": 264,
+      "<STAY:14_16天>": 265,
+      "<COST:2_4万元>": 266,
+      "<VER:2012年版>": 267,
+      "<COND:可R0切除结肠癌_I期II期或部分III期>": 268,
+      "<COND:有手术适应证无绝对禁忌证>": 269,
+      "<STAGE:D1_术前第3天>": 270,
+      "<DIET:半流质或无渣流质或禁食水>": 271,
+      "<LAB:粪便常规加潜血>": 272,
+      "<LAB:血清肿瘤标志物_CEA_CA199>": 273,
+      "<EXAM:结肠镜取活检病理>": 274,
+      "<EXAM:胸部X线或胸部平扫CT>": 275,
+      "<EXAM:全腹部强化CT或超声>": 276,
+      "<EXAM:血气肺功能超声心动图_高龄危重>": 277,
+      "<EXAM:全结肠直肠气钡双重造影>": 278,
+      "<EXAM:全身ECT骨扫描_疑似骨转移>": 279,
+      "<STAGE:D2_术前第2天>": 280,
+      "<PROC:三级医师查房与术前讨论>": 281,
+      "<COND:不完全性肠梗阻入院起每日2次小剂量泻药>": 282,
+      "<EXCLUDE:完全性肠梗阻禁忌任何肠道准备>": 283,
+      "<STAGE:D3_术前第1天肠道准备>": 284,
+      "<PROC:晚8点口服复方聚乙二醇清洁肠道>": 285,
+      "<PROC:备皮>": 286,
+      "<LAB:检查血型并备血制品>": 287,
+      "<MED:睡前安定10mg肌注_酌情>": 288,
+      "<PROC:签署手术麻醉输血同意书>": 289,
+      "<STAGE:D4_手术日>": 290,
+      "<MED:二代头孢菌素或头孢曲松或头孢噻肟_可加甲硝唑>": 291,
+      "<PROC:全麻或静脉复合连续硬膜外麻醉>": 292,
+      "<PROC:结肠癌根治切除术>": 293,
+      "<PROC:肠道吻合器应用>": 294,
+      "<LAB:术后标本全送病理_符合2010诊疗规范>": 295,
+      "<NURSING:全麻经腹结肠癌根治术后护理常规>": 296,
+      "<DIET:禁食水>": 297,
+      "<NURSING:心电监护吸氧留置导尿记出入量>": 298,
+      "<MED:抑酸化痰和镇痛治疗>": 299,
+      "<MED:静脉肠外营养治疗>": 300,
+      "<LAB:复查血常规及相关指标>": 301,
+      "<STAGE:D5_D6_术后第1_2天>": 302,
+      "<PROC:雾化吸入>": 303,
+      "<DIET:试饮水>": 304,
+      "<NURSING:尿管q4h开放>": 305,
+      "<NURSING:床上及下肢活动预防DVT>": 306,
+      "<NURSING:拍背排痰>": 307,
+      "<STAGE:D7_D8_术后第3_4天>": 308,
+      "<DIET:酌情进流质或半流质>": 309,
+      "<PROC:停用心电监护吸氧与导尿管>": 310,
+      "<MED:停用预防性抗菌药物>": 311,
+      "<PROC:腹部切口换药>": 312,
+      "<STAGE:D9_D10_术后第5_6天>": 313,
+      "<DIET:半流食>": 314,
+      "<PROC:已排气排粪拔除引流管>": 315,
+      "<STAGE:D11_D12_术后第7_8天>": 316,
+      "<MED:停用治疗性抗菌药物>": 317,
+      "<PROC:腹部切口换药与间断拆线>": 318,
+      "<PROC:根据病理分期制定术后化疗方案>": 319,
+      "<STAGE:D13_D14_术后第9_10天拆线>": 320,
+      "<DIET:普通饮食>": 321,
+      "<PROC:腹部切口拆线>": 322,
+      "<STAGE:D14_D16_出院日>": 323,
+      "<DISCHARGE:一般情况良好恢复正常饮食和肠道功能>": 324,
+      "<DISCHARGE:腹部切口II_甲愈合>": 325,
+      "<VARIATION:完全肠梗阻一期行双腔造口术>": 326,
+      "<VARIATION:围手术期并发症延长住院>": 327,
+      "<VARIATION:结肠癌肝转移切除术酌情处理>": 328
+    },
+    "unk_token": "<unk>"
+  }
+}

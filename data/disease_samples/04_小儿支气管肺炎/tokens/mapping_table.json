@@ -1,0 +1,478 @@
+{
+  "metadata": {
+    "disease_id": "PNEUMONIA_PED",
+    "disease_name": "小儿支气管肺炎",
+    "icd10": "J18.0",
+    "icd9cm3": null,
+    "specialty": "儿科/小儿内科",
+    "standard_hospital_stay": "10-14天",
+    "official_version": "2010年版",
+    "source_document": "clinical_pathways/1010个临床路径(2009-2016汇总)/2010年已发布的临床路径(（796-898）/支气管肺炎（儿科）.doc",
+    "global_vocab_size": 329,
+    "disease_active_vocab_size": 63,
+    "collision_free_global_ids": true,
+    "category_counts": {
+      "special": 2,
+      "meta": 5,
+      "cond": 4,
+      "nursing": 6,
+      "stage": 6,
+      "order": 4,
+      "req": 4,
+      "diet": 1,
+      "med": 4,
+      "proc": 5,
+      "lab": 10,
+      "exam": 5,
+      "discharge": 4,
+      "variation": 3
+    }
+  },
+  "token_to_id": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "<CP_START>": 4,
+    "<PATHWAY:小儿支气管肺炎>": 216,
+    "<ICD10:J18.0>": 217,
+    "<SPEC:儿科_小儿内科>": 218,
+    "<STAY:10_14天>": 9,
+    "<VER:2010年版>": 219,
+    "<COND:第一诊断符合ICD10_J18.0支气管肺炎>": 220,
+    "<COND:发热咳嗽气促_重者鼻翼扇动发绀三凹征>": 221,
+    "<COND:两肺闻及固定性细湿啰音>": 222,
+    "<COND:胸片示沿支气管分布小斑片状浸润影>": 223,
+    "<NURSING:维持室温18至20度_湿度55%>": 224,
+    "<STAGE:D1_入院评估与治疗>": 225,
+    "<ORDER:LONG>": 63,
+    "<REQ:REQUIRED>": 22,
+    "<NURSING:儿内科一级护理常规>": 226,
+    "<DIET:热量丰富易消化饮食与充足水分>": 227,
+    "<MED:敏感抗生素_按卫医发2004_285号执行>": 228,
+    "<MED:祛痰镇咳剂>": 229,
+    "<MED:解痉平喘药>": 230,
+    "<PROC:吸氧>": 25,
+    "<PROC:吸痰>": 231,
+    "<PROC:压缩雾化吸入>": 232,
+    "<ORDER:TEMP>": 21,
+    "<LAB:血常规及CRP>": 233,
+    "<LAB:尿常规>": 125,
+    "<LAB:粪常规>": 234,
+    "<EXAM:胸部X线平片>": 235,
+    "<LAB:呼吸道病毒与细菌病原学检查>": 236,
+    "<LAB:血支原体与衣原体测定>": 237,
+    "<LAB:动脉血气分析>": 44,
+    "<LAB:心肌酶谱及肝肾功能>": 238,
+    "<EXAM:心电图>": 134,
+    "<NURSING:加强拍背排痰及体温监测>": 239,
+    "<STAGE:D2_检查完善与病情观察>": 240,
+    "<REQ:OPTIONAL>": 41,
+    "<EXAM:肺CT>": 137,
+    "<EXAM:肺功能检查>": 241,
+    "<STAGE:D3_病原复查与呼吸支持>": 242,
+    "<PROC:支气管镜检查>": 243,
+    "<LAB:血清过敏原检查>": 244,
+    "<NURSING:皮肤口腔清洁与少食多餐>": 245,
+    "<STAGE:D4_实验室追踪与脏器保护>": 246,
+    "<PROC:根据病情营养心肌及保护肝脏>": 247,
+    "<LAB:复查血清支原体抗体>": 248,
+    "<STAGE:D5_D9_肺部炎症吸收期>": 249,
+    "<EXAM:复查胸片>": 250,
+    "<NURSING:观察药物副作用_皮疹胃肠反应>": 251,
+    "<STAGE:D10_D14_出院日>": 92,
+    "<ORDER:DISCHARGE>": 154,
+    "<MED:出院带药>": 252,
+    "<NURSING:交代勤洗手防交叉感染及复诊>": 253,
+    "<DISCHARGE:咳嗽明显减轻>": 254,
+    "<DISCHARGE:连续3天腋温小于37.5度>": 255,
+    "<DISCHARGE:肺体征改善>": 256,
+    "<DISCHARGE:X线胸片示炎症明显吸收>": 257,
+    "<VARIATION:出现心衰呼衰DIC或中毒性脑病退出路径>": 258,
+    "<VARIATION:难治性肺炎体温不退改用抗菌药物>": 259,
+    "<VARIATION:并发脓胸或脓气胸行胸腔闭式引流>": 260,
+    "<CP_END>": 5
+  },
+  "id_to_token": {
+    "0": "<pad>",
+    "1": "<unk>",
+    "2": "<s>",
+    "3": "</s>",
+    "4": "<CP_START>",
+    "216": "<PATHWAY:小儿支气管肺炎>",
+    "217": "<ICD10:J18.0>",
+    "218": "<SPEC:儿科_小儿内科>",
+    "9": "<STAY:10_14天>",
+    "219": "<VER:2010年版>",
+    "220": "<COND:第一诊断符合ICD10_J18.0支气管肺炎>",
+    "221": "<COND:发热咳嗽气促_重者鼻翼扇动发绀三凹征>",
+    "222": "<COND:两肺闻及固定性细湿啰音>",
+    "223": "<COND:胸片示沿支气管分布小斑片状浸润影>",
+    "224": "<NURSING:维持室温18至20度_湿度55%>",
+    "225": "<STAGE:D1_入院评估与治疗>",
+    "63": "<ORDER:LONG>",
+    "22": "<REQ:REQUIRED>",
+    "226": "<NURSING:儿内科一级护理常规>",
+    "227": "<DIET:热量丰富易消化饮食与充足水分>",
+    "228": "<MED:敏感抗生素_按卫医发2004_285号执行>",
+    "229": "<MED:祛痰镇咳剂>",
+    "230": "<MED:解痉平喘药>",
+    "25": "<PROC:吸氧>",
+    "231": "<PROC:吸痰>",
+    "232": "<PROC:压缩雾化吸入>",
+    "21": "<ORDER:TEMP>",
+    "233": "<LAB:血常规及CRP>",
+    "125": "<LAB:尿常规>",
+    "234": "<LAB:粪常规>",
+    "235": "<EXAM:胸部X线平片>",
+    "236": "<LAB:呼吸道病毒与细菌病原学检查>",
+    "237": "<LAB:血支原体与衣原体测定>",
+    "44": "<LAB:动脉血气分析>",
+    "238": "<LAB:心肌酶谱及肝肾功能>",
+    "134": "<EXAM:心电图>",
+    "239": "<NURSING:加强拍背排痰及体温监测>",
+    "240": "<STAGE:D2_检查完善与病情观察>",
+    "41": "<REQ:OPTIONAL>",
+    "137": "<EXAM:肺CT>",
+    "241": "<EXAM:肺功能检查>",
+    "242": "<STAGE:D3_病原复查与呼吸支持>",
+    "243": "<PROC:支气管镜检查>",
+    "244": "<LAB:血清过敏原检查>",
+    "245": "<NURSING:皮肤口腔清洁与少食多餐>",
+    "246": "<STAGE:D4_实验室追踪与脏器保护>",
+    "247": "<PROC:根据病情营养心肌及保护肝脏>",
+    "248": "<LAB:复查血清支原体抗体>",
+    "249": "<STAGE:D5_D9_肺部炎症吸收期>",
+    "250": "<EXAM:复查胸片>",
+    "251": "<NURSING:观察药物副作用_皮疹胃肠反应>",
+    "92": "<STAGE:D10_D14_出院日>",
+    "154": "<ORDER:DISCHARGE>",
+    "252": "<MED:出院带药>",
+    "253": "<NURSING:交代勤洗手防交叉感染及复诊>",
+    "254": "<DISCHARGE:咳嗽明显减轻>",
+    "255": "<DISCHARGE:连续3天腋温小于37.5度>",
+    "256": "<DISCHARGE:肺体征改善>",
+    "257": "<DISCHARGE:X线胸片示炎症明显吸收>",
+    "258": "<VARIATION:出现心衰呼衰DIC或中毒性脑病退出路径>",
+    "259": "<VARIATION:难治性肺炎体温不退改用抗菌药物>",
+    "260": "<VARIATION:并发脓胸或脓气胸行胸腔闭式引流>",
+    "5": "<CP_END>"
+  },
+  "token_details": {
+    "<pad>": {
+      "id": 0,
+      "category": "special",
+      "description": "填充占位词元"
+    },
+    "<unk>": {
+      "id": 1,
+      "category": "special",
+      "description": "未知词元"
+    },
+    "<s>": {
+      "id": 2,
+      "category": "special",
+      "description": "序列起始符"
+    },
+    "</s>": {
+      "id": 3,
+      "category": "special",
+      "description": "序列结束符"
+    },
+    "<CP_START>": {
+      "id": 4,
+      "category": "special",
+      "description": "临床路径序列开始"
+    },
+    "<PATHWAY:小儿支气管肺炎>": {
+      "id": 216,
+      "category": "meta",
+      "description": "病种标准名称"
+    },
+    "<ICD10:J18.0>": {
+      "id": 217,
+      "category": "meta",
+      "description": "第一诊断ICD-10编码"
+    },
+    "<SPEC:儿科_小儿内科>": {
+      "id": 218,
+      "category": "meta",
+      "description": "所属临床专科"
+    },
+    "<STAY:10_14天>": {
+      "id": 9,
+      "category": "meta",
+      "description": "标准住院日10-14天"
+    },
+    "<VER:2010年版>": {
+      "id": 219,
+      "category": "meta",
+      "description": "原卫生部2010年版"
+    },
+    "<COND:第一诊断符合ICD10_J18.0支气管肺炎>": {
+      "id": 220,
+      "category": "cond",
+      "description": "进入标准：符合J18.0编码"
+    },
+    "<COND:发热咳嗽气促_重者鼻翼扇动发绀三凹征>": {
+      "id": 221,
+      "category": "cond",
+      "description": "临床表现：发热咳嗽气促及重症三凹征"
+    },
+    "<COND:两肺闻及固定性细湿啰音>": {
+      "id": 222,
+      "category": "cond",
+      "description": "体征：两肺固定性细湿啰音"
+    },
+    "<COND:胸片示沿支气管分布小斑片状浸润影>": {
+      "id": 223,
+      "category": "cond",
+      "description": "影像依据：沿支气管分布小斑片影"
+    },
+    "<NURSING:维持室温18至20度_湿度55%>": {
+      "id": 224,
+      "category": "nursing",
+      "description": "一般治疗：适宜室温与湿度控制"
+    },
+    "<STAGE:D1_入院评估与治疗>": {
+      "id": 225,
+      "category": "stage",
+      "description": "住院第1天：病史体征评估与初始医嘱"
+    },
+    "<ORDER:LONG>": {
+      "id": 63,
+      "category": "order",
+      "description": "长期医嘱"
+    },
+    "<REQ:REQUIRED>": {
+      "id": 22,
+      "category": "req",
+      "description": "必选执行"
+    },
+    "<NURSING:儿内科一级护理常规>": {
+      "id": 226,
+      "category": "nursing",
+      "description": "儿内科一级护理常规"
+    },
+    "<DIET:热量丰富易消化饮食与充足水分>": {
+      "id": 227,
+      "category": "diet",
+      "description": "供给充足水分及高热量易消化饮食"
+    },
+    "<MED:敏感抗生素_按卫医发2004_285号执行>": {
+      "id": 228,
+      "category": "med",
+      "description": "足量敏感抗生素按指导原则选用"
+    },
+    "<MED:祛痰镇咳剂>": {
+      "id": 229,
+      "category": "med",
+      "description": "止咳祛痰剂"
+    },
+    "<MED:解痉平喘药>": {
+      "id": 230,
+      "category": "med",
+      "description": "气喘者可用解痉平喘药"
+    },
+    "<PROC:吸氧>": {
+      "id": 25,
+      "category": "proc",
+      "description": "给予吸氧"
+    },
+    "<PROC:吸痰>": {
+      "id": 231,
+      "category": "proc",
+      "description": "吸痰保持呼吸道通畅"
+    },
+    "<PROC:压缩雾化吸入>": {
+      "id": 232,
+      "category": "proc",
+      "description": "压缩雾化吸入"
+    },
+    "<ORDER:TEMP>": {
+      "id": 21,
+      "category": "order",
+      "description": "临时医嘱"
+    },
+    "<LAB:血常规及CRP>": {
+      "id": 233,
+      "category": "lab",
+      "description": "必查：外周血常规与CRP"
+    },
+    "<LAB:尿常规>": {
+      "id": 125,
+      "category": "lab",
+      "description": "必查：尿常规"
+    },
+    "<LAB:粪常规>": {
+      "id": 234,
+      "category": "lab",
+      "description": "必查：粪常规"
+    },
+    "<EXAM:胸部X线平片>": {
+      "id": 235,
+      "category": "exam",
+      "description": "必查：胸片"
+    },
+    "<LAB:呼吸道病毒与细菌病原学检查>": {
+      "id": 236,
+      "category": "lab",
+      "description": "必查：呼吸道病毒、细菌病原及药敏"
+    },
+    "<LAB:血支原体与衣原体测定>": {
+      "id": 237,
+      "category": "lab",
+      "description": "必查：血支原体、衣原体测定"
+    },
+    "<LAB:动脉血气分析>": {
+      "id": 44,
+      "category": "lab",
+      "description": "可查：血气分析"
+    },
+    "<LAB:心肌酶谱及肝肾功能>": {
+      "id": 238,
+      "category": "lab",
+      "description": "必查：心肌酶谱及肝肾功能"
+    },
+    "<EXAM:心电图>": {
+      "id": 134,
+      "category": "exam",
+      "description": "必查：心电图"
+    },
+    "<NURSING:加强拍背排痰及体温监测>": {
+      "id": 239,
+      "category": "nursing",
+      "description": "拍背护理与定时测量体温波动"
+    },
+    "<STAGE:D2_检查完善与病情观察>": {
+      "id": 240,
+      "category": "stage",
+      "description": "住院第2天：复查与酌情加查"
+    },
+    "<REQ:OPTIONAL>": {
+      "id": 41,
+      "category": "req",
+      "description": "根据病情可选项目"
+    },
+    "<EXAM:肺CT>": {
+      "id": 137,
+      "category": "exam",
+      "description": "可选：肺CT"
+    },
+    "<EXAM:肺功能检查>": {
+      "id": 241,
+      "category": "exam",
+      "description": "酌情行肺功能检查"
+    },
+    "<STAGE:D3_病原复查与呼吸支持>": {
+      "id": 242,
+      "category": "stage",
+      "description": "住院第3天：上级查房与可选侵入/过敏原检查"
+    },
+    "<PROC:支气管镜检查>": {
+      "id": 243,
+      "category": "proc",
+      "description": "必要时行支气管镜检查"
+    },
+    "<LAB:血清过敏原检查>": {
+      "id": 244,
+      "category": "lab",
+      "description": "必要时查血清过敏原"
+    },
+    "<NURSING:皮肤口腔清洁与少食多餐>": {
+      "id": 245,
+      "category": "nursing",
+      "description": "保持皮肤口腔清洁，少食多餐多饮水"
+    },
+    "<STAGE:D4_实验室追踪与脏器保护>": {
+      "id": 246,
+      "category": "stage",
+      "description": "住院第4天：分析结果与脏器保护"
+    },
+    "<PROC:根据病情营养心肌及保护肝脏>": {
+      "id": 247,
+      "category": "proc",
+      "description": "必要时营养心肌、保护肝脏"
+    },
+    "<LAB:复查血清支原体抗体>": {
+      "id": 248,
+      "category": "lab",
+      "description": "必要时复查血清支原体抗体"
+    },
+    "<STAGE:D5_D9_肺部炎症吸收期>": {
+      "id": 249,
+      "category": "stage",
+      "description": "住院第5-9天：恢复期治疗与胸片复查"
+    },
+    "<EXAM:复查胸片>": {
+      "id": 250,
+      "category": "exam",
+      "description": "临嘱：复查胸片评估吸收"
+    },
+    "<NURSING:观察药物副作用_皮疹胃肠反应>": {
+      "id": 251,
+      "category": "nursing",
+      "description": "观察皮疹、胃肠道反应等药物副作用"
+    },
+    "<STAGE:D10_D14_出院日>": {
+      "id": 92,
+      "category": "stage",
+      "description": "住院第10-14天：出院日"
+    },
+    "<ORDER:DISCHARGE>": {
+      "id": 154,
+      "category": "order",
+      "description": "出院医嘱"
+    },
+    "<MED:出院带药>": {
+      "id": 252,
+      "category": "med",
+      "description": "出院带药"
+    },
+    "<NURSING:交代勤洗手防交叉感染及复诊>": {
+      "id": 253,
+      "category": "nursing",
+      "description": "向家长宣教勤洗手、防交叉感染与复诊时间"
+    },
+    "<DISCHARGE:咳嗽明显减轻>": {
+      "id": 254,
+      "category": "discharge",
+      "description": "出院标准1：咳嗽明显减轻"
+    },
+    "<DISCHARGE:连续3天腋温小于37.5度>": {
+      "id": 255,
+      "category": "discharge",
+      "description": "出院标准2：连续3天腋温<37.5℃"
+    },
+    "<DISCHARGE:肺体征改善>": {
+      "id": 256,
+      "category": "discharge",
+      "description": "出院标准3：肺体征改善"
+    },
+    "<DISCHARGE:X线胸片示炎症明显吸收>": {
+      "id": 257,
+      "category": "discharge",
+      "description": "出院标准4：X线胸片示炎症明显吸收"
+    },
+    "<VARIATION:出现心衰呼衰DIC或中毒性脑病退出路径>": {
+      "id": 258,
+      "category": "variation",
+      "description": "变异/退出：并发心衰、呼衰、DIC、中毒性脑病"
+    },
+    "<VARIATION:难治性肺炎体温不退改用抗菌药物>": {
+      "id": 259,
+      "category": "variation",
+      "description": "变异：难治性肺炎需更换抗菌药物"
+    },
+    "<VARIATION:并发脓胸或脓气胸行胸腔闭式引流>": {
+      "id": 260,
+      "category": "variation",
+      "description": "变异：胸腔并发症需抽气抽脓或闭式引流"
+    },
+    "<CP_END>": {
+      "id": 5,
+      "category": "special",
+      "description": "临床路径序列结束"
+    }
+  }
+}

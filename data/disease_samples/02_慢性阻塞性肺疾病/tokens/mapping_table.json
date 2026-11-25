@@ -1,0 +1,618 @@
+{
+  "metadata": {
+    "disease_id": "AECOPD",
+    "disease_name": "慢性阻塞性肺疾病急性加重期",
+    "icd10": "J44.001或J44.101",
+    "icd9cm3": null,
+    "specialty": "呼吸内科",
+    "standard_hospital_stay": "10-22天",
+    "official_version": "2016汇总版",
+    "source_document": "clinical_pathways/1010个临床路径(2009-2016汇总)/2016年已发布的临床路径(525-574)/540慢性阻塞性肺疾病临床路径.doc",
+    "global_vocab_size": 329,
+    "disease_active_vocab_size": 83,
+    "collision_free_global_ids": true,
+    "category_counts": {
+      "special": 2,
+      "meta": 5,
+      "cond": 3,
+      "exclude": 1,
+      "stage": 5,
+      "order": 5,
+      "req": 4,
+      "nursing": 12,
+      "proc": 3,
+      "med": 13,
+      "lab": 15,
+      "exam": 8,
+      "discharge": 6,
+      "variation": 5
+    }
+  },
+  "token_to_id": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "<CP_START>": 4,
+    "<PATHWAY:慢性阻塞性肺疾病急性加重期>": 103,
+    "<ICD10:J44.001或J44.101>": 104,
+    "<SPEC:呼吸内科>": 105,
+    "<STAY:10_22天>": 106,
+    "<VER:2016汇总版>": 107,
+    "<COND:有COPD病史且超越日常持续恶化>": 108,
+    "<COND:短期内咳嗽咳痰气短喘息加重>": 109,
+    "<COND:痰量增多呈脓性或黏脓性可伴发热>": 110,
+    "<EXCLUDE:有气管插管指征转ICU退出路径>": 111,
+    "<STAGE:D1_入院初诊与呼吸衰竭评估>": 112,
+    "<ORDER:LONG>": 63,
+    "<REQ:REQUIRED>": 22,
+    "<NURSING:AECOPD护理常规>": 113,
+    "<NURSING:特级或I至III级护理>": 114,
+    "<PROC:控制性氧疗>": 115,
+    "<MED:抗生素>": 116,
+    "<MED:祛痰剂与止咳剂>": 117,
+    "<MED:支气管舒张剂>": 118,
+    "<MED:糖皮质激素>": 119,
+    "<REQ:OPTIONAL>": 41,
+    "<PROC:无创正压通气_重症>": 120,
+    "<NURSING:持续心电血压血氧监护>": 27,
+    "<NURSING:吸痰>": 121,
+    "<NURSING:记出入量>": 122,
+    "<MED:抑酸剂或胃黏膜保护剂>": 123,
+    "<ORDER:TEMP>": 21,
+    "<LAB:血常规>": 124,
+    "<LAB:尿常规>": 125,
+    "<LAB:便常规>": 126,
+    "<LAB:肝肾功能电解质血糖>": 39,
+    "<LAB:动脉血气分析>": 44,
+    "<LAB:凝血功能>": 38,
+    "<LAB:D二聚体>": 127,
+    "<LAB:红细胞沉降率与CRP>": 128,
+    "<LAB:术前免疫八项>": 129,
+    "<LAB:痰涂片找细菌真菌抗酸杆菌>": 130,
+    "<LAB:痰培养加药敏试验>": 131,
+    "<LAB:支原体衣原体结核军团菌抗体>": 132,
+    "<EXAM:胸部正侧位X线片>": 133,
+    "<EXAM:心电图>": 134,
+    "<EXAM:肺功能_通气加支气管舒张试验>": 135,
+    "<EXAM:超声心动图>": 136,
+    "<EXAM:肺CT>": 137,
+    "<EXAM:腹部超声>": 138,
+    "<EXAM:下肢超声>": 139,
+    "<NURSING:戒烟宣教>": 140,
+    "<NURSING:指导氧疗与吸入装置使用>": 141,
+    "<STAGE:D2_D3_急性期联合治疗>": 142,
+    "<MED:吸入糖皮质激素_长效β激动剂_长效抗胆碱能药>": 143,
+    "<MED:低分子肝素>": 144,
+    "<PROC:纠正水电解质失衡>": 145,
+    "<NURSING:教会有效咳嗽与拍背排痰>": 146,
+    "<STAGE:D4_D7_病情稳定与激素减量>": 147,
+    "<MED:糖皮质激素减量>": 148,
+    "<NURSING:指导缩唇呼吸与腹肌体力康复训练>": 149,
+    "<STAGE:D8_D9_出院前家庭氧疗准备>": 150,
+    "<NURSING:II或III级护理>": 151,
+    "<NURSING:交代长期家庭氧疗配备及方法>": 152,
+    "<STAGE:D10_D22_出院日>": 153,
+    "<ORDER:DISCHARGE>": 154,
+    "<MED:出院带药_祛痰止咳与支气管舒张剂>": 155,
+    "<MED:出院带药_吸入糖皮质激素与长效β激动剂>": 156,
+    "<MED:出院带药_长效抗胆碱能药>": 157,
+    "<MED:出院带药_短效β2激动剂或抗胆碱药>": 158,
+    "<MED:出院带药_抗生素>": 159,
+    "<NURSING:含激素吸入剂后需漱口宣教>": 160,
+    "<DISCHARGE:吸入支气管舒张剂不超过4小时一次>": 161,
+    "<DISCHARGE:能进食和睡眠不因呼吸困难唤醒>": 162,
+    "<DISCHARGE:能在室内活动>": 163,
+    "<DISCHARGE:低氧与高碳酸血症血气稳定12至24小时>": 164,
+    "<DISCHARGE:临床稳定12至24小时>": 165,
+    "<DISCHARGE:理解吸入药物规范使用>": 166,
+    "<VARIATION:严重并发症需专科治疗退出路径>": 167,
+    "<VARIATION:出现治疗不良反应>": 168,
+    "<VARIATION:病情加重达呼吸支持标准退出路径>": 169,
+    "<VARIATION:合并其他疾病需特殊处理退出路径>": 170,
+    "<VARIATION:患者拒绝出院退出路径>": 171,
+    "<CP_END>": 5
+  },
+  "id_to_token": {
+    "0": "<pad>",
+    "1": "<unk>",
+    "2": "<s>",
+    "3": "</s>",
+    "4": "<CP_START>",
+    "103": "<PATHWAY:慢性阻塞性肺疾病急性加重期>",
+    "104": "<ICD10:J44.001或J44.101>",
+    "105": "<SPEC:呼吸内科>",
+    "106": "<STAY:10_22天>",
+    "107": "<VER:2016汇总版>",
+    "108": "<COND:有COPD病史且超越日常持续恶化>",
+    "109": "<COND:短期内咳嗽咳痰气短喘息加重>",
+    "110": "<COND:痰量增多呈脓性或黏脓性可伴发热>",
+    "111": "<EXCLUDE:有气管插管指征转ICU退出路径>",
+    "112": "<STAGE:D1_入院初诊与呼吸衰竭评估>",
+    "63": "<ORDER:LONG>",
+    "22": "<REQ:REQUIRED>",
+    "113": "<NURSING:AECOPD护理常规>",
+    "114": "<NURSING:特级或I至III级护理>",
+    "115": "<PROC:控制性氧疗>",
+    "116": "<MED:抗生素>",
+    "117": "<MED:祛痰剂与止咳剂>",
+    "118": "<MED:支气管舒张剂>",
+    "119": "<MED:糖皮质激素>",
+    "41": "<REQ:OPTIONAL>",
+    "120": "<PROC:无创正压通气_重症>",
+    "27": "<NURSING:持续心电血压血氧监护>",
+    "121": "<NURSING:吸痰>",
+    "122": "<NURSING:记出入量>",
+    "123": "<MED:抑酸剂或胃黏膜保护剂>",
+    "21": "<ORDER:TEMP>",
+    "124": "<LAB:血常规>",
+    "125": "<LAB:尿常规>",
+    "126": "<LAB:便常规>",
+    "39": "<LAB:肝肾功能电解质血糖>",
+    "44": "<LAB:动脉血气分析>",
+    "38": "<LAB:凝血功能>",
+    "127": "<LAB:D二聚体>",
+    "128": "<LAB:红细胞沉降率与CRP>",
+    "129": "<LAB:术前免疫八项>",
+    "130": "<LAB:痰涂片找细菌真菌抗酸杆菌>",
+    "131": "<LAB:痰培养加药敏试验>",
+    "132": "<LAB:支原体衣原体结核军团菌抗体>",
+    "133": "<EXAM:胸部正侧位X线片>",
+    "134": "<EXAM:心电图>",
+    "135": "<EXAM:肺功能_通气加支气管舒张试验>",
+    "136": "<EXAM:超声心动图>",
+    "137": "<EXAM:肺CT>",
+    "138": "<EXAM:腹部超声>",
+    "139": "<EXAM:下肢超声>",
+    "140": "<NURSING:戒烟宣教>",
+    "141": "<NURSING:指导氧疗与吸入装置使用>",
+    "142": "<STAGE:D2_D3_急性期联合治疗>",
+    "143": "<MED:吸入糖皮质激素_长效β激动剂_长效抗胆碱能药>",
+    "144": "<MED:低分子肝素>",
+    "145": "<PROC:纠正水电解质失衡>",
+    "146": "<NURSING:教会有效咳嗽与拍背排痰>",
+    "147": "<STAGE:D4_D7_病情稳定与激素减量>",
+    "148": "<MED:糖皮质激素减量>",
+    "149": "<NURSING:指导缩唇呼吸与腹肌体力康复训练>",
+    "150": "<STAGE:D8_D9_出院前家庭氧疗准备>",
+    "151": "<NURSING:II或III级护理>",
+    "152": "<NURSING:交代长期家庭氧疗配备及方法>",
+    "153": "<STAGE:D10_D22_出院日>",
+    "154": "<ORDER:DISCHARGE>",
+    "155": "<MED:出院带药_祛痰止咳与支气管舒张剂>",
+    "156": "<MED:出院带药_吸入糖皮质激素与长效β激动剂>",
+    "157": "<MED:出院带药_长效抗胆碱能药>",
+    "158": "<MED:出院带药_短效β2激动剂或抗胆碱药>",
+    "159": "<MED:出院带药_抗生素>",
+    "160": "<NURSING:含激素吸入剂后需漱口宣教>",
+    "161": "<DISCHARGE:吸入支气管舒张剂不超过4小时一次>",
+    "162": "<DISCHARGE:能进食和睡眠不因呼吸困难唤醒>",
+    "163": "<DISCHARGE:能在室内活动>",
+    "164": "<DISCHARGE:低氧与高碳酸血症血气稳定12至24小时>",
+    "165": "<DISCHARGE:临床稳定12至24小时>",
+    "166": "<DISCHARGE:理解吸入药物规范使用>",
+    "167": "<VARIATION:严重并发症需专科治疗退出路径>",
+    "168": "<VARIATION:出现治疗不良反应>",
+    "169": "<VARIATION:病情加重达呼吸支持标准退出路径>",
+    "170": "<VARIATION:合并其他疾病需特殊处理退出路径>",
+    "171": "<VARIATION:患者拒绝出院退出路径>",
+    "5": "<CP_END>"
+  },
+  "token_details": {
+    "<pad>": {
+      "id": 0,
+      "category": "special",
+      "description": "填充占位词元"
+    },
+    "<unk>": {
+      "id": 1,
+      "category": "special",
+      "description": "未知词元"
+    },
+    "<s>": {
+      "id": 2,
+      "category": "special",
+      "description": "序列起始符"
+    },
+    "</s>": {
+      "id": 3,
+      "category": "special",
+      "description": "序列结束符"
+    },
+    "<CP_START>": {
+      "id": 4,
+      "category": "special",
+      "description": "临床路径序列开始"
+    },
+    "<PATHWAY:慢性阻塞性肺疾病急性加重期>": {
+      "id": 103,
+      "category": "meta",
+      "description": "病种标准名称"
+    },
+    "<ICD10:J44.001或J44.101>": {
+      "id": 104,
+      "category": "meta",
+      "description": "第一诊断ICD-10编码"
+    },
+    "<SPEC:呼吸内科>": {
+      "id": 105,
+      "category": "meta",
+      "description": "所属临床专科"
+    },
+    "<STAY:10_22天>": {
+      "id": 106,
+      "category": "meta",
+      "description": "标准住院日10-22天"
+    },
+    "<VER:2016汇总版>": {
+      "id": 107,
+      "category": "meta",
+      "description": "卫计委发布版本"
+    },
+    "<COND:有COPD病史且超越日常持续恶化>": {
+      "id": 108,
+      "category": "cond",
+      "description": "诊断依据：COPD病史及持续恶化需改变基础常规用药"
+    },
+    "<COND:短期内咳嗽咳痰气短喘息加重>": {
+      "id": 109,
+      "category": "cond",
+      "description": "临床表现：咳嗽咳痰气短或喘息加重"
+    },
+    "<COND:痰量增多呈脓性或黏脓性可伴发热>": {
+      "id": 110,
+      "category": "cond",
+      "description": "临床表现：脓性/黏脓性痰增多可伴发热"
+    },
+    "<EXCLUDE:有气管插管指征转ICU退出路径>": {
+      "id": 111,
+      "category": "exclude",
+      "description": "分流排除：需气管插管转入ICU退出路径"
+    },
+    "<STAGE:D1_入院初诊与呼吸衰竭评估>": {
+      "id": 112,
+      "category": "stage",
+      "description": "住院第1天：初步评估严重度与无创通气指征"
+    },
+    "<ORDER:LONG>": {
+      "id": 63,
+      "category": "order",
+      "description": "长期医嘱"
+    },
+    "<REQ:REQUIRED>": {
+      "id": 22,
+      "category": "req",
+      "description": "必选执行"
+    },
+    "<NURSING:AECOPD护理常规>": {
+      "id": 113,
+      "category": "nursing",
+      "description": "AECOPD护理常规"
+    },
+    "<NURSING:特级或I至III级护理>": {
+      "id": 114,
+      "category": "nursing",
+      "description": "特级/I/II/III级护理"
+    },
+    "<PROC:控制性氧疗>": {
+      "id": 115,
+      "category": "proc",
+      "description": "控制性氧疗"
+    },
+    "<MED:抗生素>": {
+      "id": 116,
+      "category": "med",
+      "description": "抗生素治疗"
+    },
+    "<MED:祛痰剂与止咳剂>": {
+      "id": 117,
+      "category": "med",
+      "description": "祛痰剂、止咳剂"
+    },
+    "<MED:支气管舒张剂>": {
+      "id": 118,
+      "category": "med",
+      "description": "支气管舒张剂"
+    },
+    "<MED:糖皮质激素>": {
+      "id": 119,
+      "category": "med",
+      "description": "糖皮质激素"
+    },
+    "<REQ:OPTIONAL>": {
+      "id": 41,
+      "category": "req",
+      "description": "根据病情可选项目"
+    },
+    "<PROC:无创正压通气_重症>": {
+      "id": 120,
+      "category": "proc",
+      "description": "重症患者：无创正压通气"
+    },
+    "<NURSING:持续心电血压血氧监护>": {
+      "id": 27,
+      "category": "nursing",
+      "description": "持续心电、血压和血氧饱和度监测"
+    },
+    "<NURSING:吸痰>": {
+      "id": 121,
+      "category": "nursing",
+      "description": "吸痰（必要时）"
+    },
+    "<NURSING:记出入量>": {
+      "id": 122,
+      "category": "nursing",
+      "description": "记出入量（必要时）"
+    },
+    "<MED:抑酸剂或胃黏膜保护剂>": {
+      "id": 123,
+      "category": "med",
+      "description": "抑酸剂或胃黏膜保护剂（必要时）"
+    },
+    "<ORDER:TEMP>": {
+      "id": 21,
+      "category": "order",
+      "description": "临时医嘱"
+    },
+    "<LAB:血常规>": {
+      "id": 124,
+      "category": "lab",
+      "description": "必查：血常规"
+    },
+    "<LAB:尿常规>": {
+      "id": 125,
+      "category": "lab",
+      "description": "必查：尿常规"
+    },
+    "<LAB:便常规>": {
+      "id": 126,
+      "category": "lab",
+      "description": "必查：便常规"
+    },
+    "<LAB:肝肾功能电解质血糖>": {
+      "id": 39,
+      "category": "lab",
+      "description": "必查：肝功能、肾功能、电解质、血糖"
+    },
+    "<LAB:动脉血气分析>": {
+      "id": 44,
+      "category": "lab",
+      "description": "可查：血气分析"
+    },
+    "<LAB:凝血功能>": {
+      "id": 38,
+      "category": "lab",
+      "description": "溶栓或急诊PCI前必查：凝血功能"
+    },
+    "<LAB:D二聚体>": {
+      "id": 127,
+      "category": "lab",
+      "description": "必查：D-dimer"
+    },
+    "<LAB:红细胞沉降率与CRP>": {
+      "id": 128,
+      "category": "lab",
+      "description": "必查：血沉与C反应蛋白"
+    },
+    "<LAB:术前免疫八项>": {
+      "id": 129,
+      "category": "lab",
+      "description": "必查：术前免疫八项"
+    },
+    "<LAB:痰涂片找细菌真菌抗酸杆菌>": {
+      "id": 130,
+      "category": "lab",
+      "description": "必查：痰涂片找细菌、真菌及抗酸杆菌"
+    },
+    "<LAB:痰培养加药敏试验>": {
+      "id": 131,
+      "category": "lab",
+      "description": "必查：痰培养+药敏试验"
+    },
+    "<LAB:支原体衣原体结核军团菌抗体>": {
+      "id": 132,
+      "category": "lab",
+      "description": "必查：支原体/衣原体/结核/军团菌抗体"
+    },
+    "<EXAM:胸部正侧位X线片>": {
+      "id": 133,
+      "category": "exam",
+      "description": "必查：胸部正侧位X线片"
+    },
+    "<EXAM:心电图>": {
+      "id": 134,
+      "category": "exam",
+      "description": "必查：心电图"
+    },
+    "<EXAM:肺功能_通气加支气管舒张试验>": {
+      "id": 135,
+      "category": "exam",
+      "description": "必查（病情允许时）：通气+支气管舒张试验"
+    },
+    "<EXAM:超声心动图>": {
+      "id": 136,
+      "category": "exam",
+      "description": "可选：超声心动图"
+    },
+    "<EXAM:肺CT>": {
+      "id": 137,
+      "category": "exam",
+      "description": "可选：肺CT"
+    },
+    "<EXAM:腹部超声>": {
+      "id": 138,
+      "category": "exam",
+      "description": "可选：腹部超声"
+    },
+    "<EXAM:下肢超声>": {
+      "id": 139,
+      "category": "exam",
+      "description": "可选：下肢超声"
+    },
+    "<NURSING:戒烟宣教>": {
+      "id": 140,
+      "category": "nursing",
+      "description": "健康宣教与戒烟宣教"
+    },
+    "<NURSING:指导氧疗与吸入装置使用>": {
+      "id": 141,
+      "category": "nursing",
+      "description": "指导氧疗、雾化吸入方法与吸入装置使用"
+    },
+    "<STAGE:D2_D3_急性期联合治疗>": {
+      "id": 142,
+      "category": "stage",
+      "description": "住院第2-3天：评估辅助检查并调整方案"
+    },
+    "<MED:吸入糖皮质激素_长效β激动剂_长效抗胆碱能药>": {
+      "id": 143,
+      "category": "med",
+      "description": "必要时：ICS/LABA/LAMA吸入制剂"
+    },
+    "<MED:低分子肝素>": {
+      "id": 144,
+      "category": "med",
+      "description": "必要时：低分子肝素"
+    },
+    "<PROC:纠正水电解质失衡>": {
+      "id": 145,
+      "category": "proc",
+      "description": "纠正水、电解质失衡"
+    },
+    "<NURSING:教会有效咳嗽与拍背排痰>": {
+      "id": 146,
+      "category": "nursing",
+      "description": "教会咳嗽排痰及协助拍背排痰方法"
+    },
+    "<STAGE:D4_D7_病情稳定与激素减量>": {
+      "id": 147,
+      "category": "stage",
+      "description": "住院第4-7天：疗效评估与激素减量"
+    },
+    "<MED:糖皮质激素减量>": {
+      "id": 148,
+      "category": "med",
+      "description": "长嘱：糖皮质激素（减量）"
+    },
+    "<NURSING:指导缩唇呼吸与腹肌体力康复训练>": {
+      "id": 149,
+      "category": "nursing",
+      "description": "指导呼吸康复训练（缩唇呼吸、腹肌及体力训练）"
+    },
+    "<STAGE:D8_D9_出院前家庭氧疗准备>": {
+      "id": 150,
+      "category": "stage",
+      "description": "住院第8-9天：评估出院与家庭氧疗宣教"
+    },
+    "<NURSING:II或III级护理>": {
+      "id": 151,
+      "category": "nursing",
+      "description": "二/三级护理"
+    },
+    "<NURSING:交代长期家庭氧疗配备及方法>": {
+      "id": 152,
+      "category": "nursing",
+      "description": "交代家庭氧疗装置配备要求及长期家庭氧疗方法"
+    },
+    "<STAGE:D10_D22_出院日>": {
+      "id": 153,
+      "category": "stage",
+      "description": "住院第10-22天：出院日"
+    },
+    "<ORDER:DISCHARGE>": {
+      "id": 154,
+      "category": "order",
+      "description": "出院医嘱"
+    },
+    "<MED:出院带药_祛痰止咳与支气管舒张剂>": {
+      "id": 155,
+      "category": "med",
+      "description": "出院带药：祛痰剂、止咳剂、支气管扩张剂"
+    },
+    "<MED:出院带药_吸入糖皮质激素与长效β激动剂>": {
+      "id": 156,
+      "category": "med",
+      "description": "出院带药：ICS/LABA"
+    },
+    "<MED:出院带药_长效抗胆碱能药>": {
+      "id": 157,
+      "category": "med",
+      "description": "出院带药（必要时）：LAMA"
+    },
+    "<MED:出院带药_短效β2激动剂或抗胆碱药>": {
+      "id": 158,
+      "category": "med",
+      "description": "出院带药：SABA/SAMA缓解用药"
+    },
+    "<MED:出院带药_抗生素>": {
+      "id": 159,
+      "category": "med",
+      "description": "出院带药：抗生素"
+    },
+    "<NURSING:含激素吸入剂后需漱口宣教>": {
+      "id": 160,
+      "category": "nursing",
+      "description": "教导患者应用含激素吸入用药后需漱口"
+    },
+    "<DISCHARGE:吸入支气管舒张剂不超过4小时一次>": {
+      "id": 161,
+      "category": "discharge",
+      "description": "出院标准1：吸入支气管舒张剂≤4h/次"
+    },
+    "<DISCHARGE:能进食和睡眠不因呼吸困难唤醒>": {
+      "id": 162,
+      "category": "discharge",
+      "description": "出院标准2：可进食且睡眠不受呼吸困难影响"
+    },
+    "<DISCHARGE:能在室内活动>": {
+      "id": 163,
+      "category": "discharge",
+      "description": "出院标准3：患者能在室内活动"
+    },
+    "<DISCHARGE:低氧与高碳酸血症血气稳定12至24小时>": {
+      "id": 164,
+      "category": "discharge",
+      "description": "出院标准4：动脉血气稳定12-24h"
+    },
+    "<DISCHARGE:临床稳定12至24小时>": {
+      "id": 165,
+      "category": "discharge",
+      "description": "出院标准5：临床稳定12-24h"
+    },
+    "<DISCHARGE:理解吸入药物规范使用>": {
+      "id": 166,
+      "category": "discharge",
+      "description": "出院标准6：能理解吸入药物规范使用"
+    },
+    "<VARIATION:严重并发症需专科治疗退出路径>": {
+      "id": 167,
+      "category": "variation",
+      "description": "变异1：并发症严重需专科治疗则退出路径"
+    },
+    "<VARIATION:出现治疗不良反应>": {
+      "id": 168,
+      "category": "variation",
+      "description": "变异2：出现治疗不良反应需诊治"
+    },
+    "<VARIATION:病情加重达呼吸支持标准退出路径>": {
+      "id": 169,
+      "category": "variation",
+      "description": "变异3：需有创呼吸支持退出路径"
+    },
+    "<VARIATION:合并其他疾病需特殊处理退出路径>": {
+      "id": 170,
+      "category": "variation",
+      "description": "变异4：合并疾病变化影响路径实施"
+    },
+    "<VARIATION:患者拒绝出院退出路径>": {
+      "id": 171,
+      "category": "variation",
+      "description": "变异5：达出院标准但患者拒绝出院"
+    },
+    "<CP_END>": {
+      "id": 5,
+      "category": "special",
+      "description": "临床路径序列结束"
+    }
+  }
+}

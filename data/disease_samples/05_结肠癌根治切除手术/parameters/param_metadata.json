@@ -1,0 +1,248 @@
+{
+  "disease_id": "COLON_CANCER",
+  "disease_name": "结肠癌根治切除手术",
+  "safetensors_file": "weights.safetensors",
+  "file_size_bytes": 3286813,
+  "target_model_hidden_dim": 4096,
+  "global_vocab_size": 329,
+  "active_vocab_size": 91,
+  "total_tensors": 8,
+  "total_parameters": 1642946,
+  "lora_config": {
+    "r": 16,
+    "lora_alpha": 32,
+    "scaling": 2.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "prefix_slots": [
+    {
+      "slot": 0,
+      "name": "Disease_Identity_Profile",
+      "cats": [
+        "meta",
+        "special"
+      ],
+      "desc": "病种身份、ICD编码与专科背景汇聚向量"
+    },
+    {
+      "slot": 1,
+      "name": "Entry_And_Exclusion_Gate",
+      "cats": [
+        "cond",
+        "exclude"
+      ],
+      "desc": "准入条件、临床体征与排除标准门控向量"
+    },
+    {
+      "slot": 2,
+      "name": "Reperfusion_And_Branches",
+      "cats": [
+        "stage",
+        "branch"
+      ],
+      "desc": "时间窗节点与核心路径分支向量"
+    },
+    {
+      "slot": 3,
+      "name": "Mandatory_Labs_And_Exams",
+      "cats": [
+        "lab",
+        "exam",
+        "req"
+      ],
+      "desc": "必查检验与辅助影像学检查表征向量"
+    },
+    {
+      "slot": 4,
+      "name": "Medications_And_Protocols",
+      "cats": [
+        "med",
+        "order"
+      ],
+      "desc": "核心药物方案与长临医嘱控制向量"
+    },
+    {
+      "slot": 5,
+      "name": "Procedures_And_Nursing",
+      "cats": [
+        "proc",
+        "nursing",
+        "diet"
+      ],
+      "desc": "手术介入操作、护理常规与膳食向量"
+    },
+    {
+      "slot": 6,
+      "name": "Discharge_Criteria_Gate",
+      "cats": [
+        "discharge"
+      ],
+      "desc": "出院标准达标核验向量"
+    },
+    {
+      "slot": 7,
+      "name": "Variation_And_Exit_Policy",
+      "cats": [
+        "variation"
+      ],
+      "desc": "变异分析与退出路径触发向量"
+    }
+  ],
+  "transition_stage_labels": [
+    "<STAGE:D1_术前第3天>",
+    "<STAGE:D2_术前第2天>",
+    "<STAGE:D3_术前第1天肠道准备>",
+    "<STAGE:D4_手术日>",
+    "<STAGE:D5_D6_术后第1_2天>",
+    "<STAGE:D7_D8_术后第3_4天>",
+    "<STAGE:D9_D10_术后第5_6天>",
+    "<STAGE:D11_D12_术后第7_8天>",
+    "<STAGE:D13_D14_术后第9_10天拆线>",
+    "<STAGE:D14_D16_出院日>",
+    "<VARIATION_EXIT>"
+  ],
+  "tensors": [
+    {
+      "shape": [
+        329,
+        4096
+      ],
+      "dtype": "float16",
+      "num_elements": 1347584,
+      "size_bytes": 2695168,
+      "l2_norm": 12.210457,
+      "mean": -1e-06,
+      "std": 0.010518,
+      "min": -0.114563,
+      "max": 0.134155,
+      "has_nan_or_inf": false,
+      "tensor_name": "embedding.weight",
+      "description": "全局对齐词嵌入矩阵（float16）：全局词表行对齐，当前病种活跃词元填充语义子空间向量，非本病种行置0"
+    },
+    {
+      "shape": [
+        329
+      ],
+      "dtype": "uint8",
+      "num_elements": 329,
+      "size_bytes": 329,
+      "l2_norm": 9.539392,
+      "mean": 0.276596,
+      "std": 0.447315,
+      "min": 0.0,
+      "max": 1.0,
+      "has_nan_or_inf": false,
+      "tensor_name": "active_vocab_mask",
+      "description": "活跃词元掩码（uint8）：1表示该全局Token ID属于本病种，支持多病种参数无冲突合并"
+    },
+    {
+      "shape": [
+        8,
+        4096
+      ],
+      "dtype": "float16",
+      "num_elements": 32768,
+      "size_bytes": 65536,
+      "l2_norm": 3.620388,
+      "mean": 2.3e-05,
+      "std": 0.02,
+      "min": -0.154297,
+      "max": 0.18103,
+      "has_nan_or_inf": false,
+      "tensor_name": "prefix_prompt.weight",
+      "description": "语义汇聚软提示前缀矩阵（float16）：8个临床维度软词元，由对应临床条款词元均值池化生成"
+    },
+    {
+      "shape": [
+        11,
+        11
+      ],
+      "dtype": "float32",
+      "num_elements": 121,
+      "size_bytes": 484,
+      "l2_norm": 2.903274,
+      "mean": 0.090909,
+      "std": 0.247784,
+      "min": 0.0,
+      "max": 1.0,
+      "has_nan_or_inf": false,
+      "tensor_name": "stage_transition.weight",
+      "description": "临床时序马尔可夫状态转移矩阵（float32）：严格满足行和=1.0、分支与变异退出的时序约束"
+    },
+    {
+      "shape": [
+        16,
+        4096
+      ],
+      "dtype": "float16",
+      "num_elements": 65536,
+      "size_bytes": 131072,
+      "l2_norm": 3.874123,
+      "mean": -5.8e-05,
+      "std": 0.015133,
+      "min": -0.065796,
+      "max": 0.07489,
+      "has_nan_or_inf": false,
+      "tensor_name": "lora_q_proj.lora_A.weight",
+      "description": "注意力Q投影LoRA降维矩阵A（float16, rank=16）：编码病种语义方向"
+    },
+    {
+      "shape": [
+        4096,
+        16
+      ],
+      "dtype": "float16",
+      "num_elements": 65536,
+      "size_bytes": 131072,
+      "l2_norm": 1.273746,
+      "mean": 7e-06,
+      "std": 0.004976,
+      "min": -0.021713,
+      "max": 0.022568,
+      "has_nan_or_inf": false,
+      "tensor_name": "lora_q_proj.lora_B.weight",
+      "description": "注意力Q投影LoRA升维矩阵B（float16, rank=16）：低秩临床推理残差投影"
+    },
+    {
+      "shape": [
+        16,
+        4096
+      ],
+      "dtype": "float16",
+      "num_elements": 65536,
+      "size_bytes": 131072,
+      "l2_norm": 3.866811,
+      "mean": -4.3e-05,
+      "std": 0.015105,
+      "min": -0.069946,
+      "max": 0.062683,
+      "has_nan_or_inf": false,
+      "tensor_name": "lora_v_proj.lora_A.weight",
+      "description": "注意力V投影LoRA降维矩阵A（float16, rank=16）：编码病种医嘱内容方向"
+    },
+    {
+      "shape": [
+        4096,
+        16
+      ],
+      "dtype": "float16",
+      "num_elements": 65536,
+      "size_bytes": 131072,
+      "l2_norm": 1.28006,
+      "mean": 1.7e-05,
+      "std": 0.005,
+      "min": -0.021072,
+      "max": 0.02063,
+      "has_nan_or_inf": false,
+      "tensor_name": "lora_v_proj.lora_B.weight",
+      "description": "注意力V投影LoRA升维矩阵B（float16, rank=16）：低秩医嘱知识注入投影"
+    }
+  ],
+  "usage_example": {
+    "load_safetensors": "from safetensors.numpy import load_file; w = load_file('parameters/weights.safetensors')",
+    "lookup_token_embedding": "token_vecs = w['embedding.weight'][token_ids]  # zero IndexError via global alignment"
+  }
+}

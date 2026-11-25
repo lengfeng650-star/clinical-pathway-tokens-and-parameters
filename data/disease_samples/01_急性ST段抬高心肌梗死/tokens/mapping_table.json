@@ -1,0 +1,760 @@
+{
+  "metadata": {
+    "disease_id": "STEMI",
+    "disease_name": "急性ST段抬高心肌梗死",
+    "icd10": "I21.0-I21.3",
+    "icd9cm3": null,
+    "specialty": "心血管内科/急诊介入",
+    "standard_hospital_stay": "10-14天",
+    "official_version": "2009版",
+    "source_document": "clinical_pathways/1010个临床路径(2009-2016汇总)/2009年已发布的临床路径(（899-1010）/急性ST段抬高心肌梗死.doc",
+    "global_vocab_size": 329,
+    "disease_active_vocab_size": 103,
+    "collision_free_global_ids": true,
+    "category_counts": {
+      "special": 2,
+      "meta": 5,
+      "cond": 7,
+      "exclude": 4,
+      "stage": 9,
+      "order": 3,
+      "req": 2,
+      "exam": 5,
+      "nursing": 14,
+      "proc": 11,
+      "lab": 10,
+      "diet": 3,
+      "med": 14,
+      "branch": 2,
+      "discharge": 5,
+      "variation": 4
+    }
+  },
+  "token_to_id": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "<CP_START>": 4,
+    "<PATHWAY:急性ST段抬高心肌梗死>": 6,
+    "<ICD10:I21.0-I21.3>": 7,
+    "<SPEC:心血管内科_急诊介入>": 8,
+    "<STAY:10_14天>": 9,
+    "<VER:2009版>": 10,
+    "<COND:持续剧烈胸痛大于30分钟>": 11,
+    "<COND:含服硝酸甘油不缓解>": 12,
+    "<COND:两相邻导联ST段抬高≥0.1mV>": 13,
+    "<COND:心肌损伤标记物异常升高>": 14,
+    "<COND:发病小于12小时适用>": 15,
+    "<EXCLUDE:主动脉夹层>": 16,
+    "<EXCLUDE:急性肺栓塞>": 17,
+    "<EXCLUDE:严重机械性并发症>": 18,
+    "<EXCLUDE:择期PCI患者>": 19,
+    "<STAGE:T0_10MIN_到达急诊科>": 20,
+    "<ORDER:TEMP>": 21,
+    "<REQ:REQUIRED>": 22,
+    "<EXAM:18导联心电图>": 23,
+    "<NURSING:卧床禁活动>": 24,
+    "<PROC:吸氧>": 25,
+    "<PROC:建立静脉通道>": 26,
+    "<NURSING:持续心电血压血氧监护>": 27,
+    "<NURSING:除颤准备>": 28,
+    "<LAB:心肌损伤标记物测定_不等待结果>": 29,
+    "<STAGE:T11_30MIN_再灌注决策>": 30,
+    "<PROC:心内科二线医师5分钟内会诊>": 31,
+    "<PROC:评估溶栓与直接PCI适应证禁忌证>": 32,
+    "<NURSING:特级护理>": 33,
+    "<DIET:禁食>": 34,
+    "<MED:镇静止痛药_吗啡或杜冷丁>": 35,
+    "<MED:硝酸酯类药物>": 36,
+    "<LAB:血常规及血型>": 37,
+    "<LAB:凝血功能>": 38,
+    "<LAB:肝肾功能电解质血糖>": 39,
+    "<LAB:感染性疾病筛查>": 40,
+    "<REQ:OPTIONAL>": 41,
+    "<LAB:血脂_D二聚体_BNP>": 42,
+    "<LAB:尿便常规加潜血酮体>": 43,
+    "<LAB:动脉血气分析>": 44,
+    "<EXAM:床旁胸部X光片>": 45,
+    "<EXAM:床旁心脏超声>": 46,
+    "<COND:急诊PCI指标D2B小于90分钟>": 47,
+    "<COND:急诊溶栓指标D2N小于30分钟>": 48,
+    "<BRANCH:直接PCI分支>": 49,
+    "<STAGE:T31_90MIN_直接PCI治疗>": 50,
+    "<PROC:局部麻醉>": 51,
+    "<PROC:直接经皮冠状动脉介入治疗_PCI>": 52,
+    "<PROC:植入冠状动脉内支架>": 53,
+    "<MED:普通肝素或低分子肝素>": 54,
+    "<MED:阿司匹林>": 55,
+    "<MED:氯吡格雷>": 56,
+    "<MED:GPIIb_IIIa受体拮抗剂>": 57,
+    "<MED:血管活性药与抗心律失常药>": 58,
+    "<BRANCH:静脉溶栓分支>": 59,
+    "<STAGE:T31_90MIN_静脉溶栓治疗>": 60,
+    "<PROC:急诊静脉溶栓治疗>": 61,
+    "<STAGE:D1_CCU24H监护>": 62,
+    "<ORDER:LONG>": 63,
+    "<NURSING:急性心肌梗死护理常规>": 64,
+    "<NURSING:记24小时出入量>": 65,
+    "<DIET:流食或半流食>": 66,
+    "<NURSING:保持大便通畅>": 67,
+    "<MED:β受体阻滞剂>": 68,
+    "<MED:ACEI或ARB>": 69,
+    "<MED:他汀类药物>": 70,
+    "<MED:术后低分子肝素2至8天>": 71,
+    "<PROC:下达病危通知>": 72,
+    "<LAB:心肌损伤标记物_每6小时至发病24小时>": 73,
+    "<STAGE:D2_CCU24_48H>": 74,
+    "<NURSING:特级或I级护理>": 75,
+    "<NURSING:卧床或床旁活动>": 76,
+    "<MED:胺碘酮_恶性心律失常>": 77,
+    "<MED:利尿剂_心力衰竭>": 78,
+    "<MED:多巴胺_低血压>": 79,
+    "<STAGE:D3_CCU48_72H>": 80,
+    "<NURSING:I级护理>": 81,
+    "<DIET:半流食或低盐低脂普食>": 82,
+    "<PROC:评估转出CCU>": 83,
+    "<STAGE:D4_D9_普通病房康复>": 84,
+    "<NURSING:II级护理>": 85,
+    "<NURSING:室内或室外活动>": 86,
+    "<NURSING:二级预防宣教>": 87,
+    "<LAB:血尿便常规及生化凝血复查>": 88,
+    "<EXAM:心脏超声心动图>": 89,
+    "<EXAM:胸部X光片>": 90,
+    "<PROC:再次血运重建评估_择期PCI或CABG>": 91,
+    "<STAGE:D10_D14_出院日>": 92,
+    "<NURSING:III级护理>": 93,
+    "<DISCHARGE:生命体征平稳>": 94,
+    "<DISCHARGE:血液动力学稳定>": 95,
+    "<DISCHARGE:心电稳定>": 96,
+    "<DISCHARGE:心功能稳定>": 97,
+    "<DISCHARGE:心肌缺血症状有效控制>": 98,
+    "<VARIATION:冠脉造影后转外科急诊CABG>": 99,
+    "<VARIATION:等待二次择期PCI或CABG>": 100,
+    "<VARIATION:合并症危重不能出CCU>": 101,
+    "<VARIATION:患者拒绝出院>": 102,
+    "<CP_END>": 5
+  },
+  "id_to_token": {
+    "0": "<pad>",
+    "1": "<unk>",
+    "2": "<s>",
+    "3": "</s>",
+    "4": "<CP_START>",
+    "6": "<PATHWAY:急性ST段抬高心肌梗死>",
+    "7": "<ICD10:I21.0-I21.3>",
+    "8": "<SPEC:心血管内科_急诊介入>",
+    "9": "<STAY:10_14天>",
+    "10": "<VER:2009版>",
+    "11": "<COND:持续剧烈胸痛大于30分钟>",
+    "12": "<COND:含服硝酸甘油不缓解>",
+    "13": "<COND:两相邻导联ST段抬高≥0.1mV>",
+    "14": "<COND:心肌损伤标记物异常升高>",
+    "15": "<COND:发病小于12小时适用>",
+    "16": "<EXCLUDE:主动脉夹层>",
+    "17": "<EXCLUDE:急性肺栓塞>",
+    "18": "<EXCLUDE:严重机械性并发症>",
+    "19": "<EXCLUDE:择期PCI患者>",
+    "20": "<STAGE:T0_10MIN_到达急诊科>",
+    "21": "<ORDER:TEMP>",
+    "22": "<REQ:REQUIRED>",
+    "23": "<EXAM:18导联心电图>",
+    "24": "<NURSING:卧床禁活动>",
+    "25": "<PROC:吸氧>",
+    "26": "<PROC:建立静脉通道>",
+    "27": "<NURSING:持续心电血压血氧监护>",
+    "28": "<NURSING:除颤准备>",
+    "29": "<LAB:心肌损伤标记物测定_不等待结果>",
+    "30": "<STAGE:T11_30MIN_再灌注决策>",
+    "31": "<PROC:心内科二线医师5分钟内会诊>",
+    "32": "<PROC:评估溶栓与直接PCI适应证禁忌证>",
+    "33": "<NURSING:特级护理>",
+    "34": "<DIET:禁食>",
+    "35": "<MED:镇静止痛药_吗啡或杜冷丁>",
+    "36": "<MED:硝酸酯类药物>",
+    "37": "<LAB:血常规及血型>",
+    "38": "<LAB:凝血功能>",
+    "39": "<LAB:肝肾功能电解质血糖>",
+    "40": "<LAB:感染性疾病筛查>",
+    "41": "<REQ:OPTIONAL>",
+    "42": "<LAB:血脂_D二聚体_BNP>",
+    "43": "<LAB:尿便常规加潜血酮体>",
+    "44": "<LAB:动脉血气分析>",
+    "45": "<EXAM:床旁胸部X光片>",
+    "46": "<EXAM:床旁心脏超声>",
+    "47": "<COND:急诊PCI指标D2B小于90分钟>",
+    "48": "<COND:急诊溶栓指标D2N小于30分钟>",
+    "49": "<BRANCH:直接PCI分支>",
+    "50": "<STAGE:T31_90MIN_直接PCI治疗>",
+    "51": "<PROC:局部麻醉>",
+    "52": "<PROC:直接经皮冠状动脉介入治疗_PCI>",
+    "53": "<PROC:植入冠状动脉内支架>",
+    "54": "<MED:普通肝素或低分子肝素>",
+    "55": "<MED:阿司匹林>",
+    "56": "<MED:氯吡格雷>",
+    "57": "<MED:GPIIb_IIIa受体拮抗剂>",
+    "58": "<MED:血管活性药与抗心律失常药>",
+    "59": "<BRANCH:静脉溶栓分支>",
+    "60": "<STAGE:T31_90MIN_静脉溶栓治疗>",
+    "61": "<PROC:急诊静脉溶栓治疗>",
+    "62": "<STAGE:D1_CCU24H监护>",
+    "63": "<ORDER:LONG>",
+    "64": "<NURSING:急性心肌梗死护理常规>",
+    "65": "<NURSING:记24小时出入量>",
+    "66": "<DIET:流食或半流食>",
+    "67": "<NURSING:保持大便通畅>",
+    "68": "<MED:β受体阻滞剂>",
+    "69": "<MED:ACEI或ARB>",
+    "70": "<MED:他汀类药物>",
+    "71": "<MED:术后低分子肝素2至8天>",
+    "72": "<PROC:下达病危通知>",
+    "73": "<LAB:心肌损伤标记物_每6小时至发病24小时>",
+    "74": "<STAGE:D2_CCU24_48H>",
+    "75": "<NURSING:特级或I级护理>",
+    "76": "<NURSING:卧床或床旁活动>",
+    "77": "<MED:胺碘酮_恶性心律失常>",
+    "78": "<MED:利尿剂_心力衰竭>",
+    "79": "<MED:多巴胺_低血压>",
+    "80": "<STAGE:D3_CCU48_72H>",
+    "81": "<NURSING:I级护理>",
+    "82": "<DIET:半流食或低盐低脂普食>",
+    "83": "<PROC:评估转出CCU>",
+    "84": "<STAGE:D4_D9_普通病房康复>",
+    "85": "<NURSING:II级护理>",
+    "86": "<NURSING:室内或室外活动>",
+    "87": "<NURSING:二级预防宣教>",
+    "88": "<LAB:血尿便常规及生化凝血复查>",
+    "89": "<EXAM:心脏超声心动图>",
+    "90": "<EXAM:胸部X光片>",
+    "91": "<PROC:再次血运重建评估_择期PCI或CABG>",
+    "92": "<STAGE:D10_D14_出院日>",
+    "93": "<NURSING:III级护理>",
+    "94": "<DISCHARGE:生命体征平稳>",
+    "95": "<DISCHARGE:血液动力学稳定>",
+    "96": "<DISCHARGE:心电稳定>",
+    "97": "<DISCHARGE:心功能稳定>",
+    "98": "<DISCHARGE:心肌缺血症状有效控制>",
+    "99": "<VARIATION:冠脉造影后转外科急诊CABG>",
+    "100": "<VARIATION:等待二次择期PCI或CABG>",
+    "101": "<VARIATION:合并症危重不能出CCU>",
+    "102": "<VARIATION:患者拒绝出院>",
+    "5": "<CP_END>"
+  },
+  "token_details": {
+    "<pad>": {
+      "id": 0,
+      "category": "special",
+      "description": "填充占位词元"
+    },
+    "<unk>": {
+      "id": 1,
+      "category": "special",
+      "description": "未知词元"
+    },
+    "<s>": {
+      "id": 2,
+      "category": "special",
+      "description": "序列起始符"
+    },
+    "</s>": {
+      "id": 3,
+      "category": "special",
+      "description": "序列结束符"
+    },
+    "<CP_START>": {
+      "id": 4,
+      "category": "special",
+      "description": "临床路径序列开始"
+    },
+    "<PATHWAY:急性ST段抬高心肌梗死>": {
+      "id": 6,
+      "category": "meta",
+      "description": "病种标准名称"
+    },
+    "<ICD10:I21.0-I21.3>": {
+      "id": 7,
+      "category": "meta",
+      "description": "第一诊断ICD-10编码"
+    },
+    "<SPEC:心血管内科_急诊介入>": {
+      "id": 8,
+      "category": "meta",
+      "description": "所属临床专科"
+    },
+    "<STAY:10_14天>": {
+      "id": 9,
+      "category": "meta",
+      "description": "标准住院日10-14天"
+    },
+    "<VER:2009版>": {
+      "id": 10,
+      "category": "meta",
+      "description": "卫健委发布版本"
+    },
+    "<COND:持续剧烈胸痛大于30分钟>": {
+      "id": 11,
+      "category": "cond",
+      "description": "诊断依据：持续剧烈胸痛>30分"
+    },
+    "<COND:含服硝酸甘油不缓解>": {
+      "id": 12,
+      "category": "cond",
+      "description": "诊断依据：含服NTG不缓解"
+    },
+    "<COND:两相邻导联ST段抬高≥0.1mV>": {
+      "id": 13,
+      "category": "cond",
+      "description": "诊断依据：心电图ST段抬高≥0.1mV"
+    },
+    "<COND:心肌损伤标记物异常升高>": {
+      "id": 14,
+      "category": "cond",
+      "description": "诊断依据：CK/CK-MB/cTnT/cTnI/肌红蛋白升高"
+    },
+    "<COND:发病小于12小时适用>": {
+      "id": 15,
+      "category": "cond",
+      "description": "路径适用时间窗：发病<12小时"
+    },
+    "<EXCLUDE:主动脉夹层>": {
+      "id": 16,
+      "category": "exclude",
+      "description": "排除标准：主动脉夹层"
+    },
+    "<EXCLUDE:急性肺栓塞>": {
+      "id": 17,
+      "category": "exclude",
+      "description": "排除标准：急性肺栓塞"
+    },
+    "<EXCLUDE:严重机械性并发症>": {
+      "id": 18,
+      "category": "exclude",
+      "description": "排除标准：严重机械性并发症"
+    },
+    "<EXCLUDE:择期PCI患者>": {
+      "id": 19,
+      "category": "exclude",
+      "description": "排除标准：择期PCI不适用本流程"
+    },
+    "<STAGE:T0_10MIN_到达急诊科>": {
+      "id": 20,
+      "category": "stage",
+      "description": "时间节点：到达急诊科0-10分钟"
+    },
+    "<ORDER:TEMP>": {
+      "id": 21,
+      "category": "order",
+      "description": "临时医嘱"
+    },
+    "<REQ:REQUIRED>": {
+      "id": 22,
+      "category": "req",
+      "description": "必选执行"
+    },
+    "<EXAM:18导联心电图>": {
+      "id": 23,
+      "category": "exam",
+      "description": "描记并评价18导联心电图"
+    },
+    "<NURSING:卧床禁活动>": {
+      "id": 24,
+      "category": "nursing",
+      "description": "卧床、禁活动"
+    },
+    "<PROC:吸氧>": {
+      "id": 25,
+      "category": "proc",
+      "description": "给予吸氧"
+    },
+    "<PROC:建立静脉通道>": {
+      "id": 26,
+      "category": "proc",
+      "description": "建立静脉通道"
+    },
+    "<NURSING:持续心电血压血氧监护>": {
+      "id": 27,
+      "category": "nursing",
+      "description": "持续心电、血压和血氧饱和度监测"
+    },
+    "<NURSING:除颤准备>": {
+      "id": 28,
+      "category": "nursing",
+      "description": "做好除颤准备"
+    },
+    "<LAB:心肌损伤标记物测定_不等待结果>": {
+      "id": 29,
+      "category": "lab",
+      "description": "测定心肌酶学与损伤标记物，不因等结果延误再灌注"
+    },
+    "<STAGE:T11_30MIN_再灌注决策>": {
+      "id": 30,
+      "category": "stage",
+      "description": "时间节点：到达急诊科11-30分钟"
+    },
+    "<PROC:心内科二线医师5分钟内会诊>": {
+      "id": 31,
+      "category": "proc",
+      "description": "急请心内科二线医师会诊复核诊断"
+    },
+    "<PROC:评估溶栓与直接PCI适应证禁忌证>": {
+      "id": 32,
+      "category": "proc",
+      "description": "迅速评估溶栓或直接PCI指征"
+    },
+    "<NURSING:特级护理>": {
+      "id": 33,
+      "category": "nursing",
+      "description": "特级护理"
+    },
+    "<DIET:禁食>": {
+      "id": 34,
+      "category": "diet",
+      "description": "急诊期禁食"
+    },
+    "<MED:镇静止痛药_吗啡或杜冷丁>": {
+      "id": 35,
+      "category": "med",
+      "description": "镇静止痛药（吗啡或杜冷丁）"
+    },
+    "<MED:硝酸酯类药物>": {
+      "id": 36,
+      "category": "med",
+      "description": "静脉滴注硝酸甘油等硝酸酯类"
+    },
+    "<LAB:血常规及血型>": {
+      "id": 37,
+      "category": "lab",
+      "description": "溶栓或急诊PCI前必查：血常规+血型"
+    },
+    "<LAB:凝血功能>": {
+      "id": 38,
+      "category": "lab",
+      "description": "溶栓或急诊PCI前必查：凝血功能"
+    },
+    "<LAB:肝肾功能电解质血糖>": {
+      "id": 39,
+      "category": "lab",
+      "description": "必查：肝功能、肾功能、电解质、血糖"
+    },
+    "<LAB:感染性疾病筛查>": {
+      "id": 40,
+      "category": "lab",
+      "description": "必查：乙丙肝、HIV、梅毒筛查"
+    },
+    "<REQ:OPTIONAL>": {
+      "id": 41,
+      "category": "req",
+      "description": "根据病情可选项目"
+    },
+    "<LAB:血脂_D二聚体_BNP>": {
+      "id": 42,
+      "category": "lab",
+      "description": "可查：血脂、D-Dimer、脑钠肽BNP"
+    },
+    "<LAB:尿便常规加潜血酮体>": {
+      "id": 43,
+      "category": "lab",
+      "description": "可查：尿、便常规+潜血、酮体"
+    },
+    "<LAB:动脉血气分析>": {
+      "id": 44,
+      "category": "lab",
+      "description": "可查：血气分析"
+    },
+    "<EXAM:床旁胸部X光片>": {
+      "id": 45,
+      "category": "exam",
+      "description": "可查：床旁胸部X光片"
+    },
+    "<EXAM:床旁心脏超声>": {
+      "id": 46,
+      "category": "exam",
+      "description": "可查：床旁心脏超声"
+    },
+    "<COND:急诊PCI指标D2B小于90分钟>": {
+      "id": 47,
+      "category": "cond",
+      "description": "质控指标：door-to-balloon < 90分钟"
+    },
+    "<COND:急诊溶栓指标D2N小于30分钟>": {
+      "id": 48,
+      "category": "cond",
+      "description": "质控指标：door-to-needle < 30分钟"
+    },
+    "<BRANCH:直接PCI分支>": {
+      "id": 49,
+      "category": "branch",
+      "description": "分支选择：发病<12h优先直接PCI或有溶栓禁忌/心源性休克"
+    },
+    "<STAGE:T31_90MIN_直接PCI治疗>": {
+      "id": 50,
+      "category": "stage",
+      "description": "时间节点：31-90分钟实施直接PCI"
+    },
+    "<PROC:局部麻醉>": {
+      "id": 51,
+      "category": "proc",
+      "description": "介入手术局部麻醉"
+    },
+    "<PROC:直接经皮冠状动脉介入治疗_PCI>": {
+      "id": 52,
+      "category": "proc",
+      "description": "实施直接PCI治疗"
+    },
+    "<PROC:植入冠状动脉内支架>": {
+      "id": 53,
+      "category": "proc",
+      "description": "手术内置物：冠状动脉内支架"
+    },
+    "<MED:普通肝素或低分子肝素>": {
+      "id": 54,
+      "category": "med",
+      "description": "抗凝药物：普通肝素或低分子肝素"
+    },
+    "<MED:阿司匹林>": {
+      "id": 55,
+      "category": "med",
+      "description": "抗血小板药物：阿司匹林"
+    },
+    "<MED:氯吡格雷>": {
+      "id": 56,
+      "category": "med",
+      "description": "抗血小板药物：氯吡格雷"
+    },
+    "<MED:GPIIb_IIIa受体拮抗剂>": {
+      "id": 57,
+      "category": "med",
+      "description": "术中可选：GPIIb/IIIa受体拮抗剂"
+    },
+    "<MED:血管活性药与抗心律失常药>": {
+      "id": 58,
+      "category": "med",
+      "description": "术中酌情：血管活性药及抗心律失常药"
+    },
+    "<BRANCH:静脉溶栓分支>": {
+      "id": 59,
+      "category": "branch",
+      "description": "分支选择：无溶栓禁忌发病≤3h或无PCI条件/PCI延误>90分"
+    },
+    "<STAGE:T31_90MIN_静脉溶栓治疗>": {
+      "id": 60,
+      "category": "stage",
+      "description": "时间节点：实施急诊静脉溶栓"
+    },
+    "<PROC:急诊静脉溶栓治疗>": {
+      "id": 61,
+      "category": "proc",
+      "description": "实施静脉溶栓并记录病情变化"
+    },
+    "<STAGE:D1_CCU24H监护>": {
+      "id": 62,
+      "category": "stage",
+      "description": "住院第1天：进入CCU 24小时内"
+    },
+    "<ORDER:LONG>": {
+      "id": 63,
+      "category": "order",
+      "description": "长期医嘱"
+    },
+    "<NURSING:急性心肌梗死护理常规>": {
+      "id": 64,
+      "category": "nursing",
+      "description": "急性心肌梗死护理常规"
+    },
+    "<NURSING:记24小时出入量>": {
+      "id": 65,
+      "category": "nursing",
+      "description": "记录24小时出入量"
+    },
+    "<DIET:流食或半流食>": {
+      "id": 66,
+      "category": "diet",
+      "description": "流食或半流食"
+    },
+    "<NURSING:保持大便通畅>": {
+      "id": 67,
+      "category": "nursing",
+      "description": "保持大便通畅"
+    },
+    "<MED:β受体阻滞剂>": {
+      "id": 68,
+      "category": "med",
+      "description": "无禁忌证者常规使用β阻滞剂"
+    },
+    "<MED:ACEI或ARB>": {
+      "id": 69,
+      "category": "med",
+      "description": "常规ACEI，不能耐受者可选用ARB"
+    },
+    "<MED:他汀类药物>": {
+      "id": 70,
+      "category": "med",
+      "description": "调脂治疗：他汀类药物"
+    },
+    "<MED:术后低分子肝素2至8天>": {
+      "id": 71,
+      "category": "med",
+      "description": "术后应用低分子肝素2-8天"
+    },
+    "<PROC:下达病危通知>": {
+      "id": 72,
+      "category": "proc",
+      "description": "下达病危通知"
+    },
+    "<LAB:心肌损伤标记物_每6小时至发病24小时>": {
+      "id": 73,
+      "category": "lab",
+      "description": "术后第1天每6小时测一次至发病24小时"
+    },
+    "<STAGE:D2_CCU24_48H>": {
+      "id": 74,
+      "category": "stage",
+      "description": "住院第2天：CCU 24-48小时"
+    },
+    "<NURSING:特级或I级护理>": {
+      "id": 75,
+      "category": "nursing",
+      "description": "特级护理或I级护理"
+    },
+    "<NURSING:卧床或床旁活动>": {
+      "id": 76,
+      "category": "nursing",
+      "description": "卧床或床旁活动"
+    },
+    "<MED:胺碘酮_恶性心律失常>": {
+      "id": 77,
+      "category": "med",
+      "description": "如发生恶性心律失常加用胺碘酮"
+    },
+    "<MED:利尿剂_心力衰竭>": {
+      "id": 78,
+      "category": "med",
+      "description": "如发生心衰加用利尿剂"
+    },
+    "<MED:多巴胺_低血压>": {
+      "id": 79,
+      "category": "med",
+      "description": "低血压者可给予多巴胺"
+    },
+    "<STAGE:D3_CCU48_72H>": {
+      "id": 80,
+      "category": "stage",
+      "description": "住院第3天：CCU 48-72小时"
+    },
+    "<NURSING:I级护理>": {
+      "id": 81,
+      "category": "nursing",
+      "description": "I级护理"
+    },
+    "<DIET:半流食或低盐低脂普食>": {
+      "id": 82,
+      "category": "diet",
+      "description": "半流食或低盐低脂普食"
+    },
+    "<PROC:评估转出CCU>": {
+      "id": 83,
+      "category": "proc",
+      "description": "评估梗死面积与心功能确定是否转出CCU"
+    },
+    "<STAGE:D4_D9_普通病房康复>": {
+      "id": 84,
+      "category": "stage",
+      "description": "住院第4-9天：普通病房康复与再评估"
+    },
+    "<NURSING:II级护理>": {
+      "id": 85,
+      "category": "nursing",
+      "description": "II级护理"
+    },
+    "<NURSING:室内或室外活动>": {
+      "id": 86,
+      "category": "nursing",
+      "description": "室内或室外活动"
+    },
+    "<NURSING:二级预防宣教>": {
+      "id": 87,
+      "category": "nursing",
+      "description": "康复指导与二级预防宣教"
+    },
+    "<LAB:血尿便常规及生化凝血复查>": {
+      "id": 88,
+      "category": "lab",
+      "description": "第7-9天复查血尿便常规、凝血、生化"
+    },
+    "<EXAM:心脏超声心动图>": {
+      "id": 89,
+      "category": "exam",
+      "description": "复查心脏超声评价心功能"
+    },
+    "<EXAM:胸部X光片>": {
+      "id": 90,
+      "category": "exam",
+      "description": "复查胸部X光片"
+    },
+    "<PROC:再次血运重建评估_择期PCI或CABG>": {
+      "id": 91,
+      "category": "proc",
+      "description": "评估择期PCI或CABG指征"
+    },
+    "<STAGE:D10_D14_出院日>": {
+      "id": 92,
+      "category": "stage",
+      "description": "住院第10-14天：出院日"
+    },
+    "<NURSING:III级护理>": {
+      "id": 93,
+      "category": "nursing",
+      "description": "III级护理"
+    },
+    "<DISCHARGE:生命体征平稳>": {
+      "id": 94,
+      "category": "discharge",
+      "description": "出院标准：生命体征平稳"
+    },
+    "<DISCHARGE:血液动力学稳定>": {
+      "id": 95,
+      "category": "discharge",
+      "description": "出院标准：血液动力学稳定"
+    },
+    "<DISCHARGE:心电稳定>": {
+      "id": 96,
+      "category": "discharge",
+      "description": "出院标准：心电稳定"
+    },
+    "<DISCHARGE:心功能稳定>": {
+      "id": 97,
+      "category": "discharge",
+      "description": "出院标准：心功能稳定"
+    },
+    "<DISCHARGE:心肌缺血症状有效控制>": {
+      "id": 98,
+      "category": "discharge",
+      "description": "出院标准：心肌缺血症状得到有效控制"
+    },
+    "<VARIATION:冠脉造影后转外科急诊CABG>": {
+      "id": 99,
+      "category": "variation",
+      "description": "变异：转外科行急诊冠脉搭桥"
+    },
+    "<VARIATION:等待二次择期PCI或CABG>": {
+      "id": 100,
+      "category": "variation",
+      "description": "变异：等待二次择期血运重建"
+    },
+    "<VARIATION:合并症危重不能出CCU>": {
+      "id": 101,
+      "category": "variation",
+      "description": "变异：危重合并症无法转出CCU"
+    },
+    "<VARIATION:患者拒绝出院>": {
+      "id": 102,
+      "category": "variation",
+      "description": "变异：患者拒绝出院"
+    },
+    "<CP_END>": {
+      "id": 5,
+      "category": "special",
+      "description": "临床路径序列结束"
+    }
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "metadata": {
+    "disease_id": "COLON_CANCER",
+    "disease_name": "结肠癌根治切除手术",
+    "icd10": "C18",
+    "icd9cm3": "45.73-45.79,45.8",
+    "specialty": "普通外科/肿瘤外科",
+    "standard_hospital_stay": "14-16天",
+    "official_version": "2012年版",
+    "source_document": "clinical_pathways/1010个临床路径(2009-2016汇总)/2012年已发布的临床路径(（587-686）/结肠癌根治切除手术.doc",
+    "global_vocab_size": 329,
+    "disease_active_vocab_size": 91,
+    "collision_free_global_ids": true,
+    "category_counts": {
+      "special": 2,
+      "meta": 7,
+      "cond": 4,
+      "stage": 10,
+      "order": 6,
+      "req": 2,
+      "nursing": 9,
+      "diet": 6,
+      "lab": 12,
+      "exam": 7,
+      "proc": 14,
+      "exclude": 1,
+      "med": 7,
+      "discharge": 3,
+      "variation": 3
+    }
+  },
+  "token_to_id": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "<CP_START>": 4,
+    "<PATHWAY:结肠癌根治切除手术>": 261,
+    "<ICD10:C18>": 262,
+    "<ICD9CM3:45.73_45.79_45.8>": 263,
+    "<SPEC:普通外科_肿瘤外科>": 264,
+    "<STAY:14_16天>": 265,
+    "<COST:2_4万元>": 266,
+    "<VER:2012年版>": 267,
+    "<COND:可R0切除结肠癌_I期II期或部分III期>": 268,
+    "<COND:有手术适应证无绝对禁忌证>": 269,
+    "<STAGE:D1_术前第3天>": 270,
+    "<ORDER:LONG>": 63,
+    "<REQ:REQUIRED>": 22,
+    "<NURSING:II级护理>": 85,
+    "<DIET:半流质或无渣流质或禁食水>": 271,
+    "<ORDER:TEMP>": 21,
+    "<LAB:血常规>": 124,
+    "<LAB:尿常规>": 125,
+    "<LAB:粪便常规加潜血>": 272,
+    "<LAB:凝血功能>": 38,
+    "<LAB:肝肾功能电解质血糖>": 39,
+    "<LAB:血清肿瘤标志物_CEA_CA199>": 273,
+    "<LAB:感染性疾病筛查>": 40,
+    "<EXAM:结肠镜取活检病理>": 274,
+    "<EXAM:胸部X线或胸部平扫CT>": 275,
+    "<EXAM:全腹部强化CT或超声>": 276,
+    "<EXAM:心电图>": 134,
+    "<REQ:OPTIONAL>": 41,
+    "<EXAM:血气肺功能超声心动图_高龄危重>": 277,
+    "<EXAM:全结肠直肠气钡双重造影>": 278,
+    "<EXAM:全身ECT骨扫描_疑似骨转移>": 279,
+    "<STAGE:D2_术前第2天>": 280,
+    "<PROC:三级医师查房与术前讨论>": 281,
+    "<COND:不完全性肠梗阻入院起每日2次小剂量泻药>": 282,
+    "<EXCLUDE:完全性肠梗阻禁忌任何肠道准备>": 283,
+    "<STAGE:D3_术前第1天肠道准备>": 284,
+    "<PROC:晚8点口服复方聚乙二醇清洁肠道>": 285,
+    "<PROC:备皮>": 286,
+    "<LAB:检查血型并备血制品>": 287,
+    "<MED:睡前安定10mg肌注_酌情>": 288,
+    "<PROC:签署手术麻醉输血同意书>": 289,
+    "<STAGE:D4_手术日>": 290,
+    "<MED:二代头孢菌素或头孢曲松或头孢噻肟_可加甲硝唑>": 291,
+    "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>": 191,
+    "<PROC:全麻或静脉复合连续硬膜外麻醉>": 292,
+    "<PROC:结肠癌根治切除术>": 293,
+    "<PROC:肠道吻合器应用>": 294,
+    "<LAB:术后标本全送病理_符合2010诊疗规范>": 295,
+    "<NURSING:全麻经腹结肠癌根治术后护理常规>": 296,
+    "<NURSING:I级护理>": 81,
+    "<DIET:禁食水>": 297,
+    "<NURSING:心电监护吸氧留置导尿记出入量>": 298,
+    "<MED:抑酸化痰和镇痛治疗>": 299,
+    "<MED:静脉肠外营养治疗>": 300,
+    "<LAB:复查血常规及相关指标>": 301,
+    "<STAGE:D5_D6_术后第1_2天>": 302,
+    "<PROC:雾化吸入>": 303,
+    "<DIET:试饮水>": 304,
+    "<NURSING:尿管q4h开放>": 305,
+    "<NURSING:床上及下肢活动预防DVT>": 306,
+    "<NURSING:拍背排痰>": 307,
+    "<STAGE:D7_D8_术后第3_4天>": 308,
+    "<DIET:酌情进流质或半流质>": 309,
+    "<PROC:停用心电监护吸氧与导尿管>": 310,
+    "<MED:停用预防性抗菌药物>": 311,
+    "<PROC:腹部切口换药>": 312,
+    "<STAGE:D9_D10_术后第5_6天>": 313,
+    "<DIET:半流食>": 314,
+    "<PROC:已排气排粪拔除引流管>": 315,
+    "<STAGE:D11_D12_术后第7_8天>": 316,
+    "<MED:停用治疗性抗菌药物>": 317,
+    "<PROC:腹部切口换药与间断拆线>": 318,
+    "<PROC:根据病理分期制定术后化疗方案>": 319,
+    "<STAGE:D13_D14_术后第9_10天拆线>": 320,
+    "<NURSING:III级护理>": 93,
+    "<DIET:普通饮食>": 321,
+    "<PROC:腹部切口拆线>": 322,
+    "<STAGE:D14_D16_出院日>": 323,
+    "<ORDER:DISCHARGE>": 154,
+    "<MED:出院带药>": 252,
+    "<DISCHARGE:一般情况良好恢复正常饮食和肠道功能>": 324,
+    "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>": 211,
+    "<DISCHARGE:腹部切口II_甲愈合>": 325,
+    "<VARIATION:完全肠梗阻一期行双腔造口术>": 326,
+    "<VARIATION:围手术期并发症延长住院>": 327,
+    "<VARIATION:结肠癌肝转移切除术酌情处理>": 328,
+    "<CP_END>": 5
+  },
+  "id_to_token": {
+    "0": "<pad>",
+    "1": "<unk>",
+    "2": "<s>",
+    "3": "</s>",
+    "4": "<CP_START>",
+    "261": "<PATHWAY:结肠癌根治切除手术>",
+    "262": "<ICD10:C18>",
+    "263": "<ICD9CM3:45.73_45.79_45.8>",
+    "264": "<SPEC:普通外科_肿瘤外科>",
+    "265": "<STAY:14_16天>",
+    "266": "<COST:2_4万元>",
+    "267": "<VER:2012年版>",
+    "268": "<COND:可R0切除结肠癌_I期II期或部分III期>",
+    "269": "<COND:有手术适应证无绝对禁忌证>",
+    "270": "<STAGE:D1_术前第3天>",
+    "63": "<ORDER:LONG>",
+    "22": "<REQ:REQUIRED>",
+    "85": "<NURSING:II级护理>",
+    "271": "<DIET:半流质或无渣流质或禁食水>",
+    "21": "<ORDER:TEMP>",
+    "124": "<LAB:血常规>",
+    "125": "<LAB:尿常规>",
+    "272": "<LAB:粪便常规加潜血>",
+    "38": "<LAB:凝血功能>",
+    "39": "<LAB:肝肾功能电解质血糖>",
+    "273": "<LAB:血清肿瘤标志物_CEA_CA199>",
+    "40": "<LAB:感染性疾病筛查>",
+    "274": "<EXAM:结肠镜取活检病理>",
+    "275": "<EXAM:胸部X线或胸部平扫CT>",
+    "276": "<EXAM:全腹部强化CT或超声>",
+    "134": "<EXAM:心电图>",
+    "41": "<REQ:OPTIONAL>",
+    "277": "<EXAM:血气肺功能超声心动图_高龄危重>",
+    "278": "<EXAM:全结肠直肠气钡双重造影>",
+    "279": "<EXAM:全身ECT骨扫描_疑似骨转移>",
+    "280": "<STAGE:D2_术前第2天>",
+    "281": "<PROC:三级医师查房与术前讨论>",
+    "282": "<COND:不完全性肠梗阻入院起每日2次小剂量泻药>",
+    "283": "<EXCLUDE:完全性肠梗阻禁忌任何肠道准备>",
+    "284": "<STAGE:D3_术前第1天肠道准备>",
+    "285": "<PROC:晚8点口服复方聚乙二醇清洁肠道>",
+    "286": "<PROC:备皮>",
+    "287": "<LAB:检查血型并备血制品>",
+    "288": "<MED:睡前安定10mg肌注_酌情>",
+    "289": "<PROC:签署手术麻醉输血同意书>",
+    "290": "<STAGE:D4_手术日>",
+    "291": "<MED:二代头孢菌素或头孢曲松或头孢噻肟_可加甲硝唑>",
+    "191": "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>",
+    "292": "<PROC:全麻或静脉复合连续硬膜外麻醉>",
+    "293": "<PROC:结肠癌根治切除术>",
+    "294": "<PROC:肠道吻合器应用>",
+    "295": "<LAB:术后标本全送病理_符合2010诊疗规范>",
+    "296": "<NURSING:全麻经腹结肠癌根治术后护理常规>",
+    "81": "<NURSING:I级护理>",
+    "297": "<DIET:禁食水>",
+    "298": "<NURSING:心电监护吸氧留置导尿记出入量>",
+    "299": "<MED:抑酸化痰和镇痛治疗>",
+    "300": "<MED:静脉肠外营养治疗>",
+    "301": "<LAB:复查血常规及相关指标>",
+    "302": "<STAGE:D5_D6_术后第1_2天>",
+    "303": "<PROC:雾化吸入>",
+    "304": "<DIET:试饮水>",
+    "305": "<NURSING:尿管q4h开放>",
+    "306": "<NURSING:床上及下肢活动预防DVT>",
+    "307": "<NURSING:拍背排痰>",
+    "308": "<STAGE:D7_D8_术后第3_4天>",
+    "309": "<DIET:酌情进流质或半流质>",
+    "310": "<PROC:停用心电监护吸氧与导尿管>",
+    "311": "<MED:停用预防性抗菌药物>",
+    "312": "<PROC:腹部切口换药>",
+    "313": "<STAGE:D9_D10_术后第5_6天>",
+    "314": "<DIET:半流食>",
+    "315": "<PROC:已排气排粪拔除引流管>",
+    "316": "<STAGE:D11_D12_术后第7_8天>",
+    "317": "<MED:停用治疗性抗菌药物>",
+    "318": "<PROC:腹部切口换药与间断拆线>",
+    "319": "<PROC:根据病理分期制定术后化疗方案>",
+    "320": "<STAGE:D13_D14_术后第9_10天拆线>",
+    "93": "<NURSING:III级护理>",
+    "321": "<DIET:普通饮食>",
+    "322": "<PROC:腹部切口拆线>",
+    "323": "<STAGE:D14_D16_出院日>",
+    "154": "<ORDER:DISCHARGE>",
+    "252": "<MED:出院带药>",
+    "324": "<DISCHARGE:一般情况良好恢复正常饮食和肠道功能>",
+    "211": "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>",
+    "325": "<DISCHARGE:腹部切口II_甲愈合>",
+    "326": "<VARIATION:完全肠梗阻一期行双腔造口术>",
+    "327": "<VARIATION:围手术期并发症延长住院>",
+    "328": "<VARIATION:结肠癌肝转移切除术酌情处理>",
+    "5": "<CP_END>"
+  },
+  "token_details": {
+    "<pad>": {
+      "id": 0,
+      "category": "special",
+      "description": "填充占位词元"
+    },
+    "<unk>": {
+      "id": 1,
+      "category": "special",
+      "description": "未知词元"
+    },
+    "<s>": {
+      "id": 2,
+      "category": "special",
+      "description": "序列起始符"
+    },
+    "</s>": {
+      "id": 3,
+      "category": "special",
+      "description": "序列结束符"
+    },
+    "<CP_START>": {
+      "id": 4,
+      "category": "special",
+      "description": "临床路径序列开始"
+    },
+    "<PATHWAY:结肠癌根治切除手术>": {
+      "id": 261,
+      "category": "meta",
+      "description": "病种与术式标准名称"
+    },
+    "<ICD10:C18>": {
+      "id": 262,
+      "category": "meta",
+      "description": "第一诊断ICD-10编码"
+    },
+    "<ICD9CM3:45.73_45.79_45.8>": {
+      "id": 263,
+      "category": "meta",
+      "description": "结肠癌根治手术编码"
+    },
+    "<SPEC:普通外科_肿瘤外科>": {
+      "id": 264,
+      "category": "meta",
+      "description": "所属临床专科"
+    },
+    "<STAY:14_16天>": {
+      "id": 265,
+      "category": "meta",
+      "description": "标准住院日14-16天"
+    },
+    "<COST:2_4万元>": {
+      "id": 266,
+      "category": "meta",
+      "description": "费用参考标准2-4万元"
+    },
+    "<VER:2012年版>": {
+      "id": 267,
+      "category": "meta",
+      "description": "原卫生部2012年版"
+    },
+    "<COND:可R0切除结肠癌_I期II期或部分III期>": {
+      "id": 268,
+      "category": "cond",
+      "description": "适用对象：可R0切除（含IIA/IIIA/部分IIIB期）"
+    },
+    "<COND:有手术适应证无绝对禁忌证>": {
+      "id": 269,
+      "category": "cond",
+      "description": "进入标准：具备手术适应证"
+    },
+    "<STAGE:D1_术前第3天>": {
+      "id": 270,
+      "category": "stage",
+      "description": "住院第1天（术前3天）：评估分期与基线检查"
+    },
+    "<ORDER:LONG>": {
+      "id": 63,
+      "category": "order",
+      "description": "长期医嘱"
+    },
+    "<REQ:REQUIRED>": {
+      "id": 22,
+      "category": "req",
+      "description": "必选执行"
+    },
+    "<NURSING:II级护理>": {
+      "id": 85,
+      "category": "nursing",
+      "description": "II级护理"
+    },
+    "<DIET:半流质或无渣流质或禁食水>": {
+      "id": 271,
+      "category": "diet",
+      "description": "术前饮食过渡"
+    },
+    "<ORDER:TEMP>": {
+      "id": 21,
+      "category": "order",
+      "description": "临时医嘱"
+    },
+    "<LAB:血常规>": {
+      "id": 124,
+      "category": "lab",
+      "description": "必查：血常规"
+    },
+    "<LAB:尿常规>": {
+      "id": 125,
+      "category": "lab",
+      "description": "必查：尿常规"
+    },
+    "<LAB:粪便常规加潜血>": {
+      "id": 272,
+      "category": "lab",
+      "description": "必查：粪便常规+潜血"
+    },
+    "<LAB:凝血功能>": {
+      "id": 38,
+      "category": "lab",
+      "description": "溶栓或急诊PCI前必查：凝血功能"
+    },
+    "<LAB:肝肾功能电解质血糖>": {
+      "id": 39,
+      "category": "lab",
+      "description": "必查：肝功能、肾功能、电解质、血糖"
+    },
+    "<LAB:血清肿瘤标志物_CEA_CA199>": {
+      "id": 273,
+      "category": "lab",
+      "description": "必查：血清肿瘤标记物CEA和CA19-9"
+    },
+    "<LAB:感染性疾病筛查>": {
+      "id": 40,
+      "category": "lab",
+      "description": "必查：乙丙肝、HIV、梅毒筛查"
+    },
+    "<EXAM:结肠镜取活检病理>": {
+      "id": 274,
+      "category": "exam",
+      "description": "必查：结肠镜取活检明确组织类型与分化程度"
+    },
+    "<EXAM:胸部X线或胸部平扫CT>": {
+      "id": 275,
+      "category": "exam",
+      "description": "必查：排除肺转移"
+    },
+    "<EXAM:全腹部强化CT或超声>": {
+      "id": 276,
+      "category": "exam",
+      "description": "必查：全腹部强化CT或超声排除他脏器转移"
+    },
+    "<EXAM:心电图>": {
+      "id": 134,
+      "category": "exam",
+      "description": "必查：心电图"
+    },
+    "<REQ:OPTIONAL>": {
+      "id": 41,
+      "category": "req",
+      "description": "根据病情可选项目"
+    },
+    "<EXAM:血气肺功能超声心动图_高龄危重>": {
+      "id": 277,
+      "category": "exam",
+      "description": "高龄危重患者查血气、肺功能及心超"
+    },
+    "<EXAM:全结肠直肠气钡双重造影>": {
+      "id": 278,
+      "category": "exam",
+      "description": "定位不准时行气钡双重造影"
+    },
+    "<EXAM:全身ECT骨扫描_疑似骨转移>": {
+      "id": 279,
+      "category": "exam",
+      "description": "疑似骨转移行全身ECT筛查"
+    },
+    "<STAGE:D2_术前第2天>": {
+      "id": 280,
+      "category": "stage",
+      "description": "住院第2天（术前2天）：术前讨论与梗阻分类肠道准备"
+    },
+    "<PROC:三级医师查房与术前讨论>": {
+      "id": 281,
+      "category": "proc",
+      "description": "三级医师查房分析结果并制定方案"
+    },
+    "<COND:不完全性肠梗阻入院起每日2次小剂量泻药>": {
+      "id": 282,
+      "category": "cond",
+      "description": "不完全性肠梗阻肠道准备策略"
+    },
+    "<EXCLUDE:完全性肠梗阻禁忌任何肠道准备>": {
+      "id": 283,
+      "category": "exclude",
+      "description": "完全性肠梗阻绝对禁忌肠道准备"
+    },
+    "<STAGE:D3_术前第1天肠道准备>": {
+      "id": 284,
+      "category": "stage",
+      "description": "住院第3天（术前1天）：清洁肠道与术前签字"
+    },
+    "<PROC:晚8点口服复方聚乙二醇清洁肠道>": {
+      "id": 285,
+      "category": "proc",
+      "description": "无梗阻病例术前12-24h口服复方聚乙二醇洗肠"
+    },
+    "<PROC:备皮>": {
+      "id": 286,
+      "category": "proc",
+      "description": "术区备皮"
+    },
+    "<LAB:检查血型并备血制品>": {
+      "id": 287,
+      "category": "lab",
+      "description": "查血型及交叉配血备血"
+    },
+    "<MED:睡前安定10mg肌注_酌情>": {
+      "id": 288,
+      "category": "med",
+      "description": "睡前安定10mg im（酌情）"
+    },
+    "<PROC:签署手术麻醉输血同意书>": {
+      "id": 289,
+      "category": "proc",
+      "description": "签署手术、麻醉、输血及委托协议书"
+    },
+    "<STAGE:D4_手术日>": {
+      "id": 290,
+      "category": "stage",
+      "description": "住院第4天（手术日）：根治切除与术后监护"
+    },
+    "<MED:二代头孢菌素或头孢曲松或头孢噻肟_可加甲硝唑>": {
+      "id": 291,
+      "category": "med",
+      "description": "预防性抗菌素：二代头孢/头孢曲松/头孢噻肟±甲硝唑"
+    },
+    "<COND:预防用药术前0.5至2小时或麻醉开始给药_超3小时加用1次>": {
+      "id": 191,
+      "category": "cond",
+      "description": "预防性抗菌药物给药时机约束"
+    },
+    "<PROC:全麻或静脉复合连续硬膜外麻醉>": {
+      "id": 292,
+      "category": "proc",
+      "description": "麻醉方式：全身麻醉或静脉复合连续硬膜外麻醉"
+    },
+    "<PROC:结肠癌根治切除术>": {
+      "id": 293,
+      "category": "proc",
+      "description": "手术方式：结肠癌根治切除"
+    },
+    "<PROC:肠道吻合器应用>": {
+      "id": 294,
+      "category": "proc",
+      "description": "部分患者使用肠道吻合器"
+    },
+    "<LAB:术后标本全送病理_符合2010诊疗规范>": {
+      "id": 295,
+      "category": "lab",
+      "description": "标本全送病理，符合《结直肠癌诊疗规范（2010年）》"
+    },
+    "<NURSING:全麻经腹结肠癌根治术后护理常规>": {
+      "id": 296,
+      "category": "nursing",
+      "description": "术后护理常规"
+    },
+    "<NURSING:I级护理>": {
+      "id": 81,
+      "category": "nursing",
+      "description": "I级护理"
+    },
+    "<DIET:禁食水>": {
+      "id": 297,
+      "category": "diet",
+      "description": "术后禁食水"
+    },
+    "<NURSING:心电监护吸氧留置导尿记出入量>": {
+      "id": 298,
+      "category": "nursing",
+      "description": "心电监护、吸氧、留置导尿、记出入量"
+    },
+    "<MED:抑酸化痰和镇痛治疗>": {
+      "id": 299,
+      "category": "med",
+      "description": "抑酸、化痰和镇痛治疗"
+    },
+    "<MED:静脉肠外营养治疗>": {
+      "id": 300,
+      "category": "med",
+      "description": "静脉肠外营养补充液量能量维持水电解质平衡"
+    },
+    "<LAB:复查血常规及相关指标>": {
+      "id": 301,
+      "category": "lab",
+      "description": "术后第1天复查血常规及电解质"
+    },
+    "<STAGE:D5_D6_术后第1_2天>": {
+      "id": 302,
+      "category": "stage",
+      "description": "住院第5-6天（术后第1-2天）"
+    },
+    "<PROC:雾化吸入>": {
+      "id": 303,
+      "category": "proc",
+      "description": "长嘱：雾化吸入"
+    },
+    "<DIET:试饮水>": {
+      "id": 304,
+      "category": "diet",
+      "description": "临嘱：试饮水"
+    },
+    "<NURSING:尿管q4h开放>": {
+      "id": 305,
+      "category": "nursing",
+      "description": "临嘱：尿管q4h开放"
+    },
+    "<NURSING:床上及下肢活动预防DVT>": {
+      "id": 306,
+      "category": "nursing",
+      "description": "鼓励床上活动尤其下肢预防深静脉血栓DVT"
+    },
+    "<NURSING:拍背排痰>": {
+      "id": 307,
+      "category": "nursing",
+      "description": "拍背排痰"
+    },
+    "<STAGE:D7_D8_术后第3_4天>": {
+      "id": 308,
+      "category": "stage",
+      "description": "住院第7-8天（术后第3-4天）"
+    },
+    "<DIET:酌情进流质或半流质>": {
+      "id": 309,
+      "category": "diet",
+      "description": "排气后酌情进流质或半流质"
+    },
+    "<PROC:停用心电监护吸氧与导尿管>": {
+      "id": 310,
+      "category": "proc",
+      "description": "根据病情停心电监护、吸氧和尿管"
+    },
+    "<MED:停用预防性抗菌药物>": {
+      "id": 311,
+      "category": "med",
+      "description": "根据病情停用预防性抗菌药物"
+    },
+    "<PROC:腹部切口换药>": {
+      "id": 312,
+      "category": "proc",
+      "description": "腹部切口隔日换药"
+    },
+    "<STAGE:D9_D10_术后第5_6天>": {
+      "id": 313,
+      "category": "stage",
+      "description": "住院第9-10天（术后第5-6天）"
+    },
+    "<DIET:半流食>": {
+      "id": 314,
+      "category": "diet",
+      "description": "半流食"
+    },
+    "<PROC:已排气排粪拔除引流管>": {
+      "id": 315,
+      "category": "proc",
+      "description": "已排气排粪可拔除腹腔引流管"
+    },
+    "<STAGE:D11_D12_术后第7_8天>": {
+      "id": 316,
+      "category": "stage",
+      "description": "住院第11-12天（术后第7-8天）"
+    },
+    "<MED:停用治疗性抗菌药物>": {
+      "id": 317,
+      "category": "med",
+      "description": "根据血常规结果决定停用治疗性抗菌药物"
+    },
+    "<PROC:腹部切口换药与间断拆线>": {
+      "id": 318,
+      "category": "proc",
+      "description": "腹部切口换药，可间断拆线"
+    },
+    "<PROC:根据病理分期制定术后化疗方案>": {
+      "id": 319,
+      "category": "proc",
+      "description": "根据病理分期制定术后辅助化疗方案"
+    },
+    "<STAGE:D13_D14_术后第9_10天拆线>": {
+      "id": 320,
+      "category": "stage",
+      "description": "住院第13-14天（术后第9-10天）"
+    },
+    "<NURSING:III级护理>": {
+      "id": 93,
+      "category": "nursing",
+      "description": "III级护理"
+    },
+    "<DIET:普通饮食>": {
+      "id": 321,
+      "category": "diet",
+      "description": "恢复普通饮食"
+    },
+    "<PROC:腹部切口拆线>": {
+      "id": 322,
+      "category": "proc",
+      "description": "术后第9天腹部切口拆线"
+    },
+    "<STAGE:D14_D16_出院日>": {
+      "id": 323,
+      "category": "stage",
+      "description": "住院第14-16天：出院日"
+    },
+    "<ORDER:DISCHARGE>": {
+      "id": 154,
+      "category": "order",
+      "description": "出院医嘱"
+    },
+    "<MED:出院带药>": {
+      "id": 252,
+      "category": "med",
+      "description": "出院带药"
+    },
+    "<DISCHARGE:一般情况良好恢复正常饮食和肠道功能>": {
+      "id": 324,
+      "category": "discharge",
+      "description": "出院标准1：恢复正常饮食和肠道功能"
+    },
+    "<DISCHARGE:体温正常腹部无阳性体征化验基本正常>": {
+      "id": 211,
+      "category": "discharge",
+      "description": "出院标准2：体温正常腹部无阳性体征"
+    },
+    "<DISCHARGE:腹部切口II_甲愈合>": {
+      "id": 325,
+      "category": "discharge",
+      "description": "出院标准3：腹部切口Ⅱ/甲愈合"
+    },
+    "<VARIATION:完全肠梗阻一期行双腔造口术>": {
+      "id": 326,
+      "category": "variation",
+      "description": "变异：完全肠梗阻一期行横结肠或末端回肠双腔造口"
+    },
+    "<VARIATION:围手术期并发症延长住院>": {
+      "id": 327,
+      "category": "variation",
+      "description": "变异：围手术期并发症增加住院日与费用"
+    },
+    "<VARIATION:结肠癌肝转移切除术酌情处理>": {
+      "id": 328,
+      "category": "variation",
+      "description": "变异：结肠癌肝转移切除术酌情处理"
+    },
+    "<CP_END>": {
+      "id": 5,
+      "category": "special",
+      "description": "临床路径序列结束"
+    }
+  }
+}
